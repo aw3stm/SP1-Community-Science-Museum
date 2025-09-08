@@ -1,5 +1,4 @@
-/*Reset*/
-
+/******Reset*******/
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +11,9 @@
   --primary-clr: #23E7C7;
   --button-clr: #23E7C7;
   --button-hover: #D1F2ED;
-  --text-clr: #000000;
   --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
+  --primary-text-clr: #000;
+  
 }
 
 img {
