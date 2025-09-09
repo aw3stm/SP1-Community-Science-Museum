@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/*variables*/
+/**********variables***********/
 
 :root {
   --primary-clr: #23E7C7;
@@ -13,8 +13,10 @@
   --button-hover: #D1F2ED;
   --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
   --primary-text-clr: #000;
-  --h1
-  
+  --h1: semibold "prompt", arial, sans-serif, Helvetica;
+  --h2: semibold "anek italic" arial, sans-serif, Helvetica;
+  --h3: semibold "inter" arial, sans-serif, helvetica;
+  --p: regular 24px "inter" arial, sans-serif, Helvetica;
 }
 
 img {
@@ -22,7 +24,7 @@ img {
   height: auto;
 }
 
-/****************FOOTER***************/
+/**************************GENERAL HTML STYLE********************/
 
 body {
   min-height: 100vh;
@@ -33,8 +35,7 @@ body {
   grid-template-areas:
   "navbar navbar navbar navbar"
   "main main main main"
-  "footer footer footer footer" 
-  ;
+  "footer footer footer footer";
 }
 
 nav {
@@ -49,6 +50,7 @@ nav {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 1em;
 }
 
@@ -57,6 +59,9 @@ main {
   padding: 2em;
 }
 
+
+/****************FOOTER***************/
+
 footer {
   grid-area: footer;
   background: var(--gradient);
@@ -64,11 +69,11 @@ footer {
   padding: 6em 4em 2em 4em;
 }
 
-.first-cont{
+.socials{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3em;
+  margin: 2em;
 }
 
 .ico {
@@ -86,30 +91,67 @@ footer {
   color: #000;
 }
 
-.sec-cont {
+.information {
 display: flex;
-justify-content: center;
+flex: 1;
 gap: 6em;
-margin: 3rem;
+margin: 2em;
 }
 
-.third-items {
+.info-content {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  flex: 1;  
+}
+
+.newsletter {
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+.newsletter input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  flex: 1;
+  background: transparent;
+}
+
+.newsletter button {
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .partners {
   font-family: "prompt", Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  margin: 1.5em 1em;
+  align-items: center;
 }
 
-.fourth-cont {
+.partner-text {
   display: flex;
-  justify-content:center;
-  align-items: center;
-  font-size: 0.6rem;
-  margin: 5em 5em 0.5em 5em;
+  gap: 1em;
+  justify-content: flex-end;
+  margin: 1em 2em 4em 0;
+}
+
+.terms-copy {
+  display: flex;
+  gap: 1em;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6rem;  
   gap: 1rem; 
 }
 
