@@ -1,3 +1,29 @@
+/******Reset*******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*variables*/
+
+:root {
+  --primary-clr: #23E7C7;
+  --button-clr: #23E7C7;
+  --button-hover: #D1F2ED;
+  --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
+  --primary-text-clr: #000;
+  --h1
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/****************FOOTER***************/
+
 body {
   min-height: 100vh;
   font-family: "inter", Arial, Helvetica, sans-serif;
@@ -86,3 +112,27 @@ margin: 3rem;
   margin: 5em 5em 0.5em 5em;
   gap: 1rem; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+ /*********** MEDIA QUIERIES************/
+
+    /*Desktops*/
+    @media (max-width: 1728px) {
+    }
+     /*Tablets*/
+    @media (max-width: 1024px) {
+    }
+
+     /*Phones*/
+    @media (max-width: 600px) {
+    }
