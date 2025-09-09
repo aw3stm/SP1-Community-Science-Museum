@@ -21,6 +21,98 @@ img {
   height: auto;
 }
 
+/****************FOOTER***************/
+
+
+body {
+  min-height: 100vh;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  "navbar navbar navbar navbar"
+  "main main main main"
+  "footer footer footer footer" 
+  ;
+}
+
+nav {
+  grid-area: navbar;
+  padding: 2em;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1em;
+}
+
+main {
+  grid-area: main;
+  padding: 2em;
+}
+
+footer {
+  grid-area: footer;
+  background: var(--gradient);
+  color: var(text-color);
+  padding: 6em 4em 2em 4em;
+}
+
+.first-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3em;
+}
+
+.ico {
+  display: flex;
+  gap: 1.5em;
+  max-width: 100%;
+  height: auto;
+}
+
+.totop, a {
+  display: flex;
+  align-items: center;
+  gap: 1.3em;
+  text-decoration: none;
+  color: #000;
+}
+
+.sec-cont {
+display: flex;
+justify-content: center;
+gap: 6em;
+margin: 3rem;
+}
+
+.third-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.partners {
+  font-family: "prompt", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 1.5em 1em;
+}
+
+.fourth-cont {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 0.6rem;
+  margin: 5em 5em 0.5em 5em;
+  gap: 1rem; 
+}
+
 
 
 
