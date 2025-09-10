@@ -69,7 +69,9 @@ main {
   text-align: center;
   margin-bottom: 2rem;
 }
-.kids_container {
+.kids_container, 
+.teachers_container,
+.researchers_container {
   max-width: 80%;
   display: flex;
   flex-direction: column;
@@ -79,19 +81,60 @@ main {
   margin-inline: auto;
   border-radius: 2rem;
 }
+
+.kids_img, .teachers_img, 
+.researchers_img * {
+border-radius: 8px;
+width: 100%;
+max-width: 36rem;
+border-radius: 24px;
+position: relative;
+display: block;
+}
+
 .kids_title {
-  display: inline;
-  width: 20%;
-  padding: 1rem 3.5rem;
+  position: absolute;
+  width: 50%;
+  padding: 1rem 3rem;
   background-color: #BDFCF9;
   border-radius: 0.2rem;
   text-transform: uppercase;
   text-align: center; 
   align-self: center;
-  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  right: -4rem;
+  bottom: -1rem;
 }
 
-.kids_text {
+.teachers_title {
+  position: absolute;
+  width: 50%;
+  padding: 1rem 3rem;
+  background-color: #BDFCF9;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  text-align: center; 
+  align-self: center;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.researchers_title {
+  position: absolute;
+  width: 50%;
+  padding: 1rem 3rem;
+  background-color: #BDFCF9;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  text-align: center; 
+  align-self: center;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.kids_text, .teachers_text,
+.researchers_text {
   width: 60%;
   max-width: 48rem;
   text-align: center;
@@ -99,16 +142,13 @@ main {
   margin-top: 2rem;
 }
 
-.kids_img {
-width: 40%;
-max-width: 98rem;
-border-radius: 24px;
-position: relative;
-}
-
-.kids_img * {
-  border-radius: 8px;
-}
+ @media screen and (max-width: 890px) {
+  .kids_title {
+    width: 100%;
+    right: 0;
+    font-size: 1.2rem;
+  }
+    }
 
 .stars_text, 
 .sleepover_text {
@@ -364,6 +404,4 @@ margin: 2em;
     @media (max-width: 1024px) {
     }
 
-     /*Phones*/
-    @media (max-width: 600px) {
-    }
+   
