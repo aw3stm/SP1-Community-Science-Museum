@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+nav, li, a {
+  gap: 1rem 3rem;
+  text-decoration: none;
+  color: var(--text-clr); 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /**********variables***********/
 
 :root {
@@ -13,20 +25,127 @@
   --button-hover: #D1F2ED;
   --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
   --primary-text-clr: #000;
-  --h1: semibold "prompt", arial, sans-serif, Helvetica;
-  --h2: semibold "anek italic" arial, sans-serif, Helvetica;
-  --h3: semibold "inter" arial, sans-serif, helvetica;
-  --p: regular 24px "inter" arial, sans-serif, Helvetica;
+  --font-family: "inter", arial, sans-serif, helvetica;
+  --h1: semibold 40px "prompt", arial, sans-serif, Helvetica;
+  --h2: semibold 32px "anek italic" arial, sans-serif, Helvetica;
+  --h3: semibold 24 "inter" arial, sans-serif, helvetica;
+  --p: semibold 20px "inter" arial, sans-serif, Helvetica;
+  --text-clr: #000;
+  --padding-sm: 1rem 3rem;
+  --padding-m: 2rem 5rem;
+  --footer-clr: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 /**************************GENERAL HTML STYLE********************/
+.container {
+  max-width: 1728px;
+  margin-inline: auto; 
+}
 
 body {
+  font-family: var(--font-family);
+  color:var(--text-clr);
+}
+
+header {
+  min-height: 15vh;
+  background-color: var(--primary-clr);
+  padding: 3em;
+}
+
+main {
+  padding: var(--padding-sm);
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+/********END OF GENERAL STYLES********/
+
+
+
+
+/*************FOOTER***********/
+footer {
+  background: var(--footer-clr);
+  min-height: 30vh;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+}
+
+.logoscont {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: var(--padding-sm);
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  margin-inline: auto;
+}
+
+.totop {
+  display: flex;
+  gap: 1rem;
+  margin-inline: auto;
+}
+
+.infocont {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-inline: auto;
+}
+
+.location, .opening, 
+.sponsor-title, .newsletter {
+  margin-inline: auto;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+}
+
+.footerh3 {
+  margin-bottom: 0.5rem;
+}
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: var(--padding-m);
+}
+
+.sponsor-name {
+  display: flex;
+  gap: 1rem;
+  margin-inline: auto;
+}
+
+.sponsortext {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-inline: auto;
+  align-items: flex-end;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  padding: var(--padding-m);
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;  
+}
+
+
+
+/*body {
   min-height: 100vh;
   font-family: "inter", Arial, Helvetica, sans-serif;
   display: grid;
@@ -60,8 +179,8 @@ main {
 }
 
 
-/****************FOOTER***************/
-
+/****************OLD FOOTER***************/
+/*
 footer {
   grid-area: footer;
   background: var(--gradient);
