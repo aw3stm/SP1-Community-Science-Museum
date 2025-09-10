@@ -1,5 +1,7 @@
 /******Reset*******/
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,7 +14,7 @@ nav, li, a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -23,6 +25,7 @@ img {
   --primary-clr: #23E7C7;
   --button-clr: #23E7C7;
   --button-hover: #D1F2ED;
+  --kids-explore-bg: #DEFDFC;
   --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
   --primary-text-clr: #000;
   --font-family: "inter", arial, sans-serif, helvetica;
@@ -61,6 +64,61 @@ main {
   flex-wrap: wrap;
 }
 /********END OF GENERAL STYLES********/
+
+
+
+/********************EXPLORE**********
+*************************/
+.explore_title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.kids_container {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 4rem 0;
+  background-color: var(--kids-explore-bg);
+  margin-bottom: 4rem;
+  margin-inline: auto;
+  border-radius: 2rem;
+}
+.kids_title {
+  display: inline;
+  width: 40%;
+  max-width: 24rem;
+  padding: 1rem 4rem;
+  background-color: #BDFCF9;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  text-align: center; 
+  align-self: center;
+  margin: 1rem;
+}
+
+.kids_text {
+  width: 60%;
+  max-width: 48rem;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.kids_img {
+width: 40%;
+max-width: 98rem;
+border-radius: 24px;
+}
+
+.kids_img * {
+  border-radius: 8px;
+}
+
+.stars_text, .sleepover_text {
+  margin: 1rem;
+}
+
+
+
 
 
 
