@@ -26,6 +26,11 @@ img {
   --button-clr: #23E7C7;
   --button-hover: #D1F2ED;
   --kids-explore-bg: #DEFDFC;
+  --exh-bg-clr: #F9F9F9;
+  --events-young-sci-bg: #FF738F;
+  --events-prof-bg: #FAF5F2;
+  --events-night-bg: #EFC593;
+  --events-energ-bg: #E2FAF9;
   --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
   --primary-text-clr: #000;
   --font-family: "inter", arial, sans-serif, helvetica;
@@ -170,12 +175,6 @@ display: block;
   margin-bottom: 1rem;
 }
 
-
-
-
-
-
-
 /*************FOOTER***********/
 footer {
   background: var(--footer-clr);
@@ -274,8 +273,7 @@ h1 {
 .card {
   display: flex;
   max-width: 63rem;
-  justify-content: center;
-  
+  justify-content: center; 
 }
 
 .card img {
@@ -296,6 +294,44 @@ h1 {
   margin-bottom: 0.8rem;
 }
 
+/************EVENTS**********/
+
+.events {
+  max-width: 72rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--exh-bg-clr);
+  margin-inline: auto; 
+}
+
+.section1 {background-color: var(--events-young-sci-bg);}
+.section2 {background-color: var(--events-prof-bg);}
+.section3 {background-color: var(--events-night-bg);}
+.section4 {background-color: var(--events-energ-bg);}
+
+.events-img {
+  margin-inline: auto;
+  max-width: 72rem;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.events-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 72rem;
+  padding: 2rem;
+}
+
+.events-text h2, .text-info {
+  text-align: center;
+}
+
+
 
 
 
@@ -311,4 +347,6 @@ h1 {
     @media (max-width: 1024px) {
     }
 
-   
+     /*Phones*/
+    @media (max-width: 600px) {
+    }
