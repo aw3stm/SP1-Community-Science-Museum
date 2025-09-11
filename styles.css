@@ -27,6 +27,10 @@ img {
   --button-hover: #D1F2ED;
   --kids-explore-bg: #DEFDFC;
   --exh-bg-clr: #F9F9F9;
+  --events-young-sci-bg: #FF738F;
+  --events-prof-bg: #FAF5F2;
+  --events-night-bg: #EFC593;
+  --events-energ-bg: #E2FAF9;
   --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
   --primary-text-clr: #000;
   --font-family: "inter", arial, sans-serif, helvetica;
