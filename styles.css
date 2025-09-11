@@ -274,8 +274,7 @@ h1 {
 .card {
   display: flex;
   max-width: 63rem;
-  justify-content: center;
-  
+  justify-content: center; 
 }
 
 .card img {
@@ -296,7 +295,24 @@ h1 {
   margin-bottom: 0.8rem;
 }
 
+/************EVENTS**********/
 
+.events {
+  max-width: 98rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+  padding: 4rem;
+  background-color: var(--exh-bg-clr);
+  gap: 2rem;
+}
+
+.section1 {background-color: var(--events-young-sci-bg);}
+.section2 {background-color: var(--events-prof-bg);}
+.section3 {background-color: var(--events-night-bg);}
+.section4 {background-color: var(--events-energ-bg);}
 
 
 
