@@ -275,16 +275,11 @@ footer {
   margin-inline: auto;
 }
 
-.newsletter {
-  display: flex;
-  flex-direction: column;
-}
-
 input {
   width: 100%;
   border: none;
-  padding: 1rem;
-  font-family: "inter";
+  padding: 1rem 0 1rem 0;
+  font-family: "inter", Arial, Helvetica, sans-serif;
   border-radius: 0.5rem;
   background: none;
 }
@@ -292,7 +287,15 @@ input::placeholder {
   color: #000;
   font-family: "inter", Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  border-bottom: 1px solid #000;
 }
+
+.newsletter-mail {
+  display: flex;
+  align-items: center;
+}
+
+
 
 .links {
   display: flex;
