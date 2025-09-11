@@ -66,7 +66,43 @@ main {
   flex-grow: 1;
   flex-wrap: wrap;
 }
+
+button {
+  padding: 1rem 3rem;
+  border-style: none;
+  border-radius: 0.5rem;
+  font: var(--p);
+  background-color: var(--button-clr);
+  
+}
 /********END OF GENERAL STYLES********/
+
+
+/**************NAVBAR TEST***********/
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: var(--padding-m);
+}
+
+
+.nav-links {
+  display: flex;
+  text-align: center;
+  gap: 2rem;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
 
 /********************EXPLORE**********
 *************************/
