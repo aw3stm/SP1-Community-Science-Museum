@@ -254,7 +254,6 @@ footer {
 }
 
 
-
 /**************************EXHIBITION********************/
 h1 {
   text-align: center;
@@ -298,21 +297,39 @@ h1 {
 /************EVENTS**********/
 
 .events {
-  max-width: 98rem;
+  max-width: 72rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 4rem;
-  padding: 4rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
   background-color: var(--exh-bg-clr);
-  gap: 2rem;
+  margin-inline: auto; 
 }
 
 .section1 {background-color: var(--events-young-sci-bg);}
 .section2 {background-color: var(--events-prof-bg);}
 .section3 {background-color: var(--events-night-bg);}
 .section4 {background-color: var(--events-energ-bg);}
+
+.events-img {
+  margin-inline: auto;
+  max-width: 72rem;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.events-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 72rem;
+  padding: 2rem;
+}
+
+.events-text h2, .text-info {
+  text-align: center;
+}
 
 
 
