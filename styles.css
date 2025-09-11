@@ -26,6 +26,7 @@ img {
   --button-clr: #23E7C7;
   --button-hover: #D1F2ED;
   --kids-explore-bg: #DEFDFC;
+  --exh-bg-clr: #F9F9F9;
   --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
   --primary-text-clr: #000;
   --font-family: "inter", arial, sans-serif, helvetica;
@@ -170,12 +171,6 @@ display: block;
   margin-bottom: 1rem;
 }
 
-
-
-
-
-
-
 /*************FOOTER***********/
 footer {
   background: var(--footer-clr);
@@ -255,6 +250,7 @@ footer {
 }
 
 
+
 /**************************EXHIBITION********************/
 h1 {
   text-align: center;
@@ -302,6 +298,9 @@ h1 {
 
 
 
+
+
+
  /*********** MEDIA QUIERIES************/
 
     /*Desktops*/
@@ -311,4 +310,6 @@ h1 {
     @media (max-width: 1024px) {
     }
 
-   
+     /*Phones*/
+    @media (max-width: 600px) {
+    }
