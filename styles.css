@@ -255,139 +255,46 @@ footer {
 }
 
 
-
-/*body {
-  min-height: 100vh;
-  font-family: "inter", Arial, Helvetica, sans-serif;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-  "navbar navbar navbar navbar"
-  "main main main main"
-  "footer footer footer footer";
+/**************************EXHIBITION********************/
+h1 {
+  text-align: center;
 }
-
-nav {
-  grid-area: navbar;
-  padding: 2em;
-}
-
-.nav-items {
+.cards {
+  max-width: 98rem;
   display: flex;
-  justify-content: space-between;
-}
-
-.nav-links {
-  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 1em;
+  margin: 4rem;
+  padding: 4rem;
+  background-color: var(--exh-bg-clr);
+  gap: 2rem;
 }
 
-main {
-  grid-area: main;
-  padding: 2em;
-}
-
-
-/****************OLD FOOTER***************/
-/*
-footer {
-  grid-area: footer;
-  background: var(--gradient);
-  color: var(text-color);
-  padding: 6em 4em 2em 4em;
-}
-
-.socials{
+.card {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2em;
+  max-width: 63rem;
+  justify-content: center;
+  
 }
 
-.ico {
-  display: flex;
-  gap: 1.5em;
-  max-width: 100%;
-  height: auto;
+.card img {
+  max-width: 300px;
+  border-radius: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.totop, a {
-  display: flex;
-  align-items: center;
-  gap: 1.3em;
-  text-decoration: none;
-  color: #000;
-}
-
-.information {
-display: flex;
-flex: 1;
-gap: 6em;
-margin: 2em;
-}
-
-.info-content {
+.card-text {
   display: flex;
   flex-direction: column;
-  flex: 1;  
-}
-
-.newsletter {
-  display: flex;
-  border-bottom: 1px solid #000;
-}
-
-.newsletter input {
-  border: none;
-  outline: none;
-  padding: 5px;
-  flex: 1;
-  background: transparent;
-}
-
-.newsletter button {
-  border: none;
-  background: none;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.sponsors {
-  display: flex;
-  flex-direction: column;  
-}
-
-.partners {
-  font-family: "prompt", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  max-width: 27rem;
   align-items: center;
+  text-align: center;
 }
 
-.partner-text {
-  display: flex;
-  gap: 1em;
-  justify-content: flex-end;
-  margin: 1em 2em 4em 0;
+.card-text h2 {
+  margin-bottom: 0.8rem;
 }
-
-.terms-copy {
-  display: flex;
-  gap: 1em;
-}
-
-.copyright {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.6rem;  
-  gap: 1rem; 
-}
-
-
-
-
-
 
 
 
