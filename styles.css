@@ -1,5 +1,7 @@
-/******Reset*******/
-* {
+/******************Reset*******************/
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,17 +14,18 @@ nav, li, a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
 
-/**********variables***********/
+/**********Variables***********/
 
 :root {
   --primary-clr: #23E7C7;
   --button-clr: #23E7C7;
   --button-hover: #D1F2ED;
+  --kids-explore-bg: #DEFDFC;
   --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
   --primary-text-clr: #000;
   --font-family: "inter", arial, sans-serif, helvetica;
@@ -35,8 +38,6 @@ img {
   --padding-m: 2rem 5rem;
   --footer-clr: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
 }
-
-
 
 /**************************GENERAL HTML STYLE********************/
 .container {
@@ -51,7 +52,7 @@ body {
 
 header {
   min-height: 15vh;
-  background-color: var(--primary-clr);
+  background-color: #fff;
   padding: 3em;
 }
 
@@ -61,6 +62,116 @@ main {
   flex-wrap: wrap;
 }
 /********END OF GENERAL STYLES********/
+
+/********************EXPLORE**********
+*************************/
+.explore_title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.kids_container, 
+.teachers_container,
+.researchers_container {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  background-color: var(--kids-explore-bg);
+  margin-bottom: 4rem;
+  margin-inline: auto;
+  border-radius: 2rem;
+}
+
+.kids_img, .teachers_img, 
+.researchers_img * {
+border-radius: 8px;
+width: 100%;
+max-width: 36rem;
+border-radius: 24px;
+position: relative;
+display: block;
+}
+
+.kids_title {
+  position: absolute;
+  width: 50%;
+  padding: 1rem 3rem;
+  background-color: #BDFCF9;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  text-align: center; 
+  align-self: center;
+  z-index: 1;
+  white-space: nowrap;
+  right: -4rem;
+  bottom: -1rem;
+}
+
+.teachers_title {
+  position: absolute;
+  width: 50%;
+  padding: 1rem 3rem;
+  background-color: #BDFCF9;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  text-align: center; 
+  align-self: center;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.researchers_title {
+  position: absolute;
+  width: 50%;
+  padding: 1rem 3rem;
+  background-color: #BDFCF9;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  text-align: center; 
+  align-self: center;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.kids_text, .teachers_text,
+.researchers_text {
+  width: 60%;
+  max-width: 48rem;
+  text-align: center;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+ @media screen and (max-width: 890px) {
+  .kids_title {
+    width: 100%;
+    right: 0;
+    font-size: 1.2rem;
+  }
+    }
+
+.stars_text, 
+.sleepover_text {
+  margin: 1rem;
+}
+
+.holidays {
+  background-color: var(--primary-clr);
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  margin-bottom: 4rem;
+  margin-inline: auto;
+  border-radius: 2rem;
+}
+.holiday_title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+
 
 
 
@@ -293,6 +404,4 @@ margin: 2em;
     @media (max-width: 1024px) {
     }
 
-     /*Phones*/
-    @media (max-width: 600px) {
-    }
+   
