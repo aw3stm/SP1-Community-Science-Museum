@@ -259,7 +259,6 @@ footer {
 }
 
 .infocont {
- 
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -270,6 +269,12 @@ footer {
 .sponsor-title, .newsletter {
   margin-inline: auto;
 }
+
+input {
+  outline: none;
+  border: none;
+}
+
 
 .links {
   display: flex;
@@ -288,15 +293,6 @@ footer {
   padding: var(--padding-m);
 }
 
-form {
-  background-color: #fff;
-  color: #000;
-  border: none;
-}
-
-input {
-  accent-color: var(--primary-clr);
-}
 
 .sponsor-name {
   display: flex;
