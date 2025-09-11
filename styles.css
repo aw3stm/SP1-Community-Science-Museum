@@ -10,7 +10,8 @@
 nav, li, a {
   gap: 1rem 3rem;
   text-decoration: none;
-  color: var(--text-clr); 
+  color: var(--text-clr);
+  list-style: none;
 }
 
 img {
@@ -35,9 +36,9 @@ img {
   --primary-text-clr: #000;
   --font-family: "inter", arial, sans-serif, helvetica;
   --h1: semibold 40px "prompt", arial, sans-serif, Helvetica;
-  --h2: semibold 32px "anek italic" arial, sans-serif, Helvetica;
+  --h2: semibold 32px "anek latin" arial, sans-serif, Helvetica;
   --h3: semibold 24 "inter" arial, sans-serif, helvetica;
-  --p: semibold 20px "inter" arial, sans-serif, Helvetica;
+  --p: normal 20px "anek latin" arial, sans-serif, Helvetica;
   --text-clr: #000;
   --padding-sm: 1rem 3rem;
   --padding-m: 2rem 5rem;
@@ -73,6 +74,7 @@ button {
   border-radius: 0.5rem;
   font: var(--p);
   background-color: var(--button-clr);
+  cursor: pointer;
   
 }
 /********END OF GENERAL STYLES********/
