@@ -282,11 +282,11 @@ footer {
 
 input {
   width: 100%;
-  outline: none;
   border: none;
   padding: 1rem;
   font-family: "inter";
   border-radius: 0.5rem;
+  background: none;
 }
 input::placeholder {
   color: #000;
@@ -405,12 +405,6 @@ h1 {
 .events-text h2, .text-info {
   text-align: center;
 }
-
-
-
-
-
-
 
 
  /*********** MEDIA QUIERIES************/
