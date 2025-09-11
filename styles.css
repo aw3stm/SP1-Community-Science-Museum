@@ -62,6 +62,7 @@ img {
 }
 
 body {
+  min-height: 100vh;
   font-family: var(--font-family);
   color:var(--text-clr);
 }
@@ -285,6 +286,16 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: var(--padding-m);
+}
+
+form {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+input {
+  accent-color: var(--primary-clr);
 }
 
 .sponsor-name {
