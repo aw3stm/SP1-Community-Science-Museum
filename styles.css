@@ -1,87 +1,161 @@
 /******Header/Navbar******/
+.header_logo { 
+display: flex; 
+flex-wrap: none; 
+max-width: 180px; 
+height: 100%; 
+padding: 0rem 2rem; 
+} 
+
+.header_logo img { 
+width: 100%; 
+max-height: 100%; 
+} 
 
 .header_container {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-padding: 2rem 0rem;
-}  
-
-.header_logo {
-  display: flex;
-  flex-wrap: none;
-  width: 140px;
-  height: 100%;
-  margin: 1rem;
-  }
-
-  .header_logo img {
     width: 100%;
-    max-height: 100%;
-  }
-
-  .navbar_container {
+    max-height: 140px;
+    padding: 1rem 2rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 1rem;
-    overflow: hidden;
-    background-color: white;
-  }
+    justify-content: space-between;
+}
 
-  .navbar_container a {
-    float: left;
-    font-size: 16px;
-    color:white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+.navbar_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 6rem;
+}
 
-  .home_dropdown {
-    float: left;
-    
-  }
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+}
 
-  .home_dropdown .home_dropdown button {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
+.home_dropdown li{
+  position: relative;
+}
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    z-index: 1;
-  }
+nav li {
+  list-style: none;
+  font-family: inter;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+}
 
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
+nav ul li a {
+  font-family: inter;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+}
 
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
+nav ul li ul {
+  display: block;
+  position: absolute;
+  background-color: white;
+}
 
-  .home_dropdown:hover .dropdown-content {
-    display: block;
-  }
-/********in progress**********/
-  .navbar_container a:hover, .navbar_container button:hover {
-    background-color:white;
-  }
+a {
+  color: inherit; 
+  text-decoration: none;
+}
+
+.home_dropdown {
+  display: relative;
+  padding: 0 1rem;
+}
+
+.home_content {
+ display: none;
+ position: absolute;
+ background-color: white;
+ text-align: center;
+}
+
+.home_content li {
+ padding: 10px 20px;
+}
+
+.home_content li:hover {
+ color: #23E7C7;
+}
+
+.home_dropdown:hover .home_content  {
+ display: block;
+}
+
+.experience_dropdown {
+  display: relative;
+  padding: 0 1rem;
+  
+}
+
+.experience_content {
+ display: none;
+ position: absolute;
+ background-color: white;
+ text-align: center;
+}
+
+.experience_content li {
+ padding: 10px 20px;
+}
+
+.experience_content li:hover {
+ color: #23E7C7;
+}
+
+.experience_dropdown:hover .experience_content  {
+ display: block;
+}
+
+.news:hover {
+  color: #23E7C7;
+}
+.work:hover {
+  color: #23E7C7;
+}
+
+/*****home page******/
+.welcome {
+max-width: 100%;
+max-height: 100%;
+display: grid;
+grid-template-columns: 50% auto;
+}
+
+.welcome__content {
+width: 100%;
+background: #ffffff;
+background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(227, 248, 244, 1) 50%, rgba(35, 231, 199, 1) 100%);
+}
+
+.welcome__content img {
+width: 100%;
+height: 100%;
+}
+
+.welcome__content h1 {
+color: #000;
+font-family: Prompt;
+font-size: 72px;
+font-style: normal;
+font-weight: 700;
+}
+.welcome__content p {
+color: #000;
+font-family: "Anek Latin";
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+}
+
+
+
 
 /******************Reset*******************/
 *,
@@ -103,7 +177,7 @@ padding: 2rem 0rem;
   width: 100%;
   height: auto;
   display: block;
-}
+} */
 
 /**********Variables***********/
 
@@ -129,14 +203,6 @@ padding: 2rem 0rem;
   --p: normal 20px "anek latin" arial, sans-serif, Helvetica;
   --text-clr: #000;
 
-  --padding-sm: 1rem 3rem;
-  --padding-m: 2rem 5rem;
-  
-  --btn-clr:#23E7C7;
-  --btn-text:#000;
-  --btn-radius: 0.5rem;
-  --btn-font-size: 1.25rem;
-
 }
 
   h1 { font-family: "prompt";}
@@ -146,23 +212,15 @@ padding: 2rem 0rem;
 
 
 
-/*****General styling for Annas pages******/
-.a-main-container {
-  max-width: 1728px;
-  margin-inline: auto;
-  min-height: 100vh;
-  font-family: var(--font-family);
-  color: var(--text-clr);
-}
+
+
+
 
 .a-main-wrapper {
   padding: var(--padding-sm);
   flex-grow: 1;
   flex-wrap: wrap;
 }
-
-/*************END************/
-
 
 /********************EXPLORE**********************/
 
