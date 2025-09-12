@@ -92,14 +92,14 @@ padding: 2rem 0rem;
   box-sizing: border-box;
 }
 
-nav, li, a {
+  li, a {
   gap: 1rem 3rem;
   text-decoration: none;
   color: var(--text-clr);
   list-style: none;
 }
 
-img {
+.a-img {
   width: 100%;
   height: auto;
   display: block;
