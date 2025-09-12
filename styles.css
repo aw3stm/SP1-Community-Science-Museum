@@ -246,8 +246,6 @@ button {
 /********END OF GENERAL STYLES********/
 
 
-}
-
 .a-main-wrapper {
   padding: var(--padding-sm);
   flex-grow: 1;
