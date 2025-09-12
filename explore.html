@@ -6,45 +6,81 @@
 <script src="https://kit.fontawesome.com/d73d073248.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Inter:ital,opsz,wght@0… rel="stylesheet">
 <title>Explore</title>
 <link rel="stylesheet" href="styles.css">
 </head>
-<body class="container">
-  <header>
-    
-  </header>
-  <main>
-    <section>
-      <h1 class="explore_title">Explore</h1>
-      <div class="kids_container">
-        <div class="kids kids_img">
-          <img src="images/swing-exp-img.jpg" alt="a boy sitting on a swing">
-      
-      <div class="kids kids__title">
-          <h2 class="kids_title">For kids</h2>
+<body>
+    <header class="header_container">
+      <div class="header_logo">
+        <img src="/ico/Logo_navbar.png">
+      </div>
+      <nav class="navbar_container">
+        <div class="home_dropdown">
+          <a href="/index.html"><button>HOME</button></a>
+            <div class="dropdown-content">
+              <a href="/about.html">ABOUT</a>
+              <a href="/contact.html">CONTACT</a>
+              <a href="/opening.html">OPENING</a>
+              <a href="/prices.html">PRICES</a>
+              <a href="/tickets.html">TICKETS</a>
             </div>
+        </div>
+        <div class="experience_dropdown">
+          <button>EXPERIENCE</button></a>
+          <div class="dropdown-content"> <!---same class wrong?-->
+            <a href="exhibition.html">EXHIBITION</a>
+            <a href="explore.html">EXPLORE</a>
           </div>
+        </div>
+        <div class="news_btn">
+          <a href="events.html"><button>NEWS</button></a>
+        </div>
+        <div class="work_btn">
+          <a href="/work.html"><button>WORK</button></a>
+        </div>
+      </nav>
+      <div class="cta_container">
+        <p>Open now</p>
+        <p>tuesday 10:00-16:00</p>
+        <div class="cta_btns">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="/tickets.html"><button>Buy ticket</button></a>
+        </div>
+      </div>
+    </header>
+  <div class="a-main-container">
+    <main class="a-main-wrapper">
+      <section>
+        <h1 class="explore_title">Explore</h1>
+          <div class="kids_container">
+          <div class="kids kids_img">
+          <img src="images/swing-exp-img.jpg" alt="a boy sitting on a swing">
+       
+          <div class="kids kids__title">
+          <h2 class="kids_title">For kids</h2>
+        </div>
+      </div>
             <div class="kids kids_text">
               <h3 class="stars_text">Young stars club</h3>
               <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.
-                You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore. 
+                You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore. 
                 We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.
               </p>
-            <h3 class="sleepover_text">Sleepover at the museum</h3>
+              <h3 class="sleepover_text">Sleepover at the museum</h3>
               <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag  and get ready to rough it as we go exploring the wonders of science.
             </p>
-            </div>
-        </div>
+          </div>
+      </div>
     </section>  
     <section class="holidays">
       <div class="holiday_text">
           <h2 class="holiday_title">Holidays</h2>
-          <p>During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.             
+          <p>During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.             
           </p>
         </div>
     </section>
-    
+   
     <section class="teachers_container">
       <div class="teachers_img">
         <img src="images/skeletton-explore.jpg" alt="museum with a dinosaur skeletton, hanging from the roof">
@@ -53,12 +89,12 @@
           <h2>For teachers</h2>
           </div>
           <div class="teachers_text">
-            <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them. 
-            Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit. 
+            <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them. 
+            Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit. 
           </p>
         </div>
-    </section> 
-
+    </section>
+ 
     <section class="researchers_container">
       <div class="researchers_img">
         <img src="images/heart-exp-img.jpg" alt="heart"></div>
@@ -66,82 +102,82 @@
           <h2>For researchers</h2>
           </div>
           <div class="researchers_text">
-            <p>Are you looking to get involved with our team of researchers and academics? 
-            Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country. 
+            <p>Are you looking to get involved with our team of researchers and academics?
+            Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country. 
           </p>
         </div>
-    </section> 
-</main>
-
-
-
+    </section>
+  </main>
+</div>
+ 
+ 
   <footer>
-    <div class="logoscont">
-        <div class="logo">
-    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-    </div>
-    
-    <div class="totop">
-      <a href="#">Back to top</a>
-        <i class="fa-solid fa-arrow-up"></i>
-      </div>
-    </div>
-    <div class="infocont">
-      <div class="location">
-        <h3 class="footerh3">Location</h3>
-        <p>Wergelandsveien 29</p> 
-        <p>0167 Oslo</p>
-      </div>
-    <div class="opening">
-       <h3 class="footerh3">Opening hours</h3>
-          <p>Monday: Closed</p>
-          <p>Tuesday-Thursday: 10:00 - 16:00</p>
-          <p>Friday: 10:00 – 19:00</p>
-          <p>Saturday: 9:00 – 16:00</p>
-          <p>Sunday: 9:00 – 13:00</p>
-      </div>
-
-        <div class="newsletter">
-            <h3 class="footerh3">Newsletter</h3>
-            <form class="newsletter">
-            <input type="email" placeholder="Enter email">
-          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-            </form>   
-      </div>
-      <div class="links">
-          <h3 class="footerh3">Quick links</h3>
-            <a href="#">Q&A</a>
-            <a href="#">Contact us</a>
-            <a href="#">Your visit</a>
-            <a href="#">Locations</a>
-            <a href="#">Jobs</a>
-        </div> 
-    </div>
-
-      <div class="sponsors">
-        <div class="sponsor-title">        
-          <h3>Partners and founders</h3>
-      </div>
-      <div class="sponsor-name">
-          <h4>NordTek Solutions</h4>
-          <h4>Fjordkraft Energi</h4>
-          <h4>Nordlys Stiftelsen</h4>
-        </div>
-      </div>
-       <div class="copyright">
-          <div class="copy-text">
-          <p>&copy; 2025 Community Science Museum</p>
-          </div>
-      <div class="terms-copy">
-        <a href="#">Terms and condition</a>
-        <a href="#">Privacy and cookies</a>
-        <a href="#">Terms of use</a>
-        <a href="#">FAQ</a>
-        </div>
-      </div>
-    </footer>
+    <div class="logoscont">
+        <div class="logo">
+    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+   
+    <div class="totop">
+      <a href="#">Back to top</a>
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    </div>
+    <div class="infocont">
+      <div class="location">
+        <h3 class="footerh3">Location</h3>
+        <p>Wergelandsveien 29</p>
+        <p>0167 Oslo</p>
+      </div>
+    <div class="opening">
+       <h3 class="footerh3">Opening hours</h3>
+          <p>Monday: Closed</p>
+          <p>Tuesday-Thursday: 10:00 - 16:00</p>
+          <p>Friday: 10:00 – 19:00</p>
+          <p>Saturday: 9:00 – 16:00</p>
+          <p>Sunday: 9:00 – 13:00</p>
+      </div>
+ 
+        <div class="newsletter">
+            <h3 class="footerh3">Newsletter</h3>
+            <form class="newsletter-mail">
+            <input type="email" placeholder="Enter email">
+            <i class="fa-solid fa-arrow-right"></i>
+           </form>  
+      </div>
+      <div class="links">
+          <h3 class="footerh3">Quick links</h3>
+            <a href="#">Q&A</a>
+            <a href="#">Contact us</a>
+            <a href="#">Your visit</a>
+            <a href="#">Locations</a>
+            <a href="#">Jobs</a>
+        </div>
+    </div>
+ 
+      <div class="sponsors">
+        <div class="sponsor-title">        
+          <h3>Partners and founders</h3>
+      </div>
+      <div class="sponsor-name">
+          <h4>NordTek Solutions</h4>
+          <h4>Fjordkraft Energi</h4>
+          <h4>Nordlys Stiftelsen</h4>
+        </div>
+      </div>
+       <div class="copyright">
+          <div class="copy-text">
+          <p>&copy; 2025 Community Science Museum</p>
+          </div>
+      <div class="terms-copy">
+        <a href="#">Terms and condition</a>
+        <a href="#">Privacy and cookies</a>
+        <a href="#">Terms of use</a>
+        <a href="#">FAQ</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
