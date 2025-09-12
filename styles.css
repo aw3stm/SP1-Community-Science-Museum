@@ -137,12 +137,15 @@ img {
   --btn-radius: 0.5rem;
   --btn-font-size: 1.25rem;
 
-
-
 }
 
+  h1 { font-family: "prompt";}
+  h2 {font-family: "anek latin";}
+  h3 {font-family: "inter";}
+  p  {font-family: "inter";}
+
 /**************************GENERAL HTML STYLE********************/
-.container {
+/*.container {
   max-width: 1728px;
   margin-inline: auto; 
 }
@@ -153,10 +156,7 @@ body {
   color:var(--text-clr);
 }
 
-  h1 { font-family: "prompt";}
-  h2 {font-family: "anek latin";}
-  h3 {font-family: "inter";}
-  p  {font-family: "inter";}
+ 
 
 header {
   min-height: 15vh;
@@ -182,30 +182,7 @@ button {
 /********END OF GENERAL STYLES********/
 
 
-/**************NAVBAR TEST***********/
 
-
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  padding: var(--padding-m);
-}
-
-
-.nav-links {
-  display: flex;
-  text-align: center;
-  gap: 2rem;
-}
-
-.nav-btn {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 
 
 
