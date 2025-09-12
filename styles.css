@@ -156,8 +156,6 @@ body {
   color:var(--text-clr);
 }
 
- 
-
 header {
   min-height: 15vh;
   background-color: #fff;
@@ -181,13 +179,27 @@ button {
 }
 /********END OF GENERAL STYLES********/
 
+/*****General styling for Annas pages******/
+.a-main-container {
+  max-width: 1728px;
+  margin-inline: auto;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  color: var(--text-clr);
+}
 
+.a-main-wrapper {
+  padding: var(--padding-sm);
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
 
-
+/********END OF GENERAL STYLES********/
 
 
 /********************EXPLORE**********
 *************************/
+
 
 
 .explore_title {
