@@ -210,43 +210,11 @@ img {
   h3 {font-family: "inter";}
   p  {font-family: "inter";}
 
-/**************************GENERAL HTML STYLE********************/
-/*.container {
-  max-width: 1728px;
-  margin-inline: auto; 
-}
-
-body {
-  min-height: 100vh;
-  font-family: var(--font-family);
-  color:var(--text-clr);
-}
-
-/* header {
-  min-height: 15vh;
-  background-color: #fff;
-  padding: 3em;
-} */
-
-main {
-  padding: var(--padding-sm);
-  flex-grow: 1;
-  flex-wrap: wrap;
-}
-
-button {
-  padding: 1rem 3rem;
-  border-style: none;
-  border-radius: 0.5rem;
-  font-size: var(--btn-font-size);
-  background-color: var(--button-clr);
-  cursor: pointer;
-  
-}
-/********END OF GENERAL STYLES********/
 
 
-}
+
+
+
 
 .a-main-wrapper {
   padding: var(--padding-sm);
