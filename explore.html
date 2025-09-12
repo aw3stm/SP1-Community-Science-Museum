@@ -3,42 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <script src="https://kit.fontawesome.com/d73d073248.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<title>Explore</title>
 <link rel="stylesheet" href="styles.css">
 </head>
-<body class="container">
-  <header>
-    <nav>
-      
-     
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h1 class="explore_title">Explore</h1>
-      <div class="kids_container">
-        <div class="kids kids_img">
-          <img src="images/swing-exp-img.jpg" alt="a boy sitting on a swing">
-      
-      <div class="kids kids__title">
-          <h2 class="kids_title">For kids</h2>
+<body>
+    <header class="header_container">
+      <div class="header_logo">
+        <img src="/ico/Logo_navbar.png">
+      </div>
+      <nav class="navbar_container">
+        <div class="home_dropdown">
+          <a href="/index.html"><button>HOME</button></a>
+            <div class="dropdown-content">
+              <a href="/about.html">ABOUT</a>
+              <a href="/contact.html">CONTACT</a>
+              <a href="/opening.html">OPENING</a>
+              <a href="/prices.html">PRICES</a>
+              <a href="/tickets.html">TICKETS</a>
             </div>
+        </div>
+        <div class="experience_dropdown">
+          <button>EXPERIENCE</button></a>
+          <div class="dropdown-content"> <!---same class wrong?-->
+            <a href="exhibition.html">EXHIBITION</a>
+            <a href="explore.html">EXPLORE</a>
           </div>
+        </div>
+        <div class="news_btn">
+          <a href="events.html"><button>NEWS</button></a>
+        </div>
+        <div class="work_btn">
+          <a href="/work.html"><button>WORK</button></a>
+        </div>
+      </nav>
+      <div class="cta_container">
+        <p>Open now</p>
+        <p>tuesday 10:00-16:00</p>
+        <div class="cta_btns">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="/tickets.html"><button>Buy ticket</button></a>
+        </div>
+      </div>
+    </header>
+  <div class="a-main-container">
+    <main class="a-main-wrapper">
+      <section>
+        <h1 class="explore_title">Explore</h1>
+          <div class="kids_container">
+          <div class="kids kids_img">
+          <img src="images/swing-exp-img.jpg" alt="a boy sitting on a swing">
+        
+          <div class="kids kids__title">
+          <h2 class="kids_title">For kids</h2>
+        </div>
+      </div>
             <div class="kids kids_text">
               <h3 class="stars_text">Young stars club</h3>
-              <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do. 
+              <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.
                 You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore. 
                 We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.
               </p>
-            <h3 class="sleepover_text">Sleepover at the museum</h3>
+              <h3 class="sleepover_text">Sleepover at the museum</h3>
               <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag  and get ready to rough it as we go exploring the wonders of science.
             </p>
-            </div>
-        </div>
+          </div>
+      </div>
     </section>  
     <section class="holidays">
       <div class="holiday_text">
@@ -74,8 +107,8 @@
           </p>
         </div>
     </section> 
-</main>
-
+  </main>
+</div>
 
 
   <footer>
@@ -88,8 +121,8 @@
     </div>
     
     <div class="totop">
-    <h3 class="footerh3"><a href="#">Back to top</h3></a>
-        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      <a href="#">Back to top</a>
+        <i class="fa-solid fa-arrow-up"></i>
       </div>
     </div>
     <div class="infocont">
@@ -109,9 +142,10 @@
 
         <div class="newsletter">
             <h3 class="footerh3">Newsletter</h3>
-            <form class="newsletter">
+            <form class="newsletter-mail">
             <input type="email" placeholder="Enter email">
-          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>   
+            <i class="fa-solid fa-arrow-right"></i>
+           </form>   
       </div>
       <div class="links">
           <h3 class="footerh3">Quick links</h3>
@@ -135,7 +169,7 @@
       </div>
        <div class="copyright">
           <div class="copy-text">
-          <p>&copy 2025 Community Science Museum</p>
+          <p>&copy; 2025 Community Science Museum</p>
           </div>
       <div class="terms-copy">
         <a href="#">Terms and condition</a>

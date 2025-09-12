@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events</title>
-<script src="index.js" defer></script>
 <script src="https://kit.fontawesome.com/d73d073248.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +11,50 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="container">
-  <header>
-    <nav>
-             
-    </nav>
-  </header>
-  <main>
+<body>
+  <header class="header_container">
+      <div class="header_logo">
+        <img src="/ico/Logo_navbar.png">
+      </div>
+      <nav class="navbar_container">
+        <div class="home_dropdown">
+          <a href="index.html"><button>HOME</button></a>
+            <div class="dropdown-content">
+              <a href="about.html">ABOUT</a>
+              <a href="contact.html">CONTACT</a>
+              <a href="opening.html">OPENING</a>
+              <a href="prices.html">PRICES</a>
+              <a href="tickets.html">TICKETS</a>
+            </div>
+        </div>
+        <div class="experience_dropdown">
+          <button>EXPERIENCE</button></a>
+          <div class="dropdown-content"> <!---same class wrong?-->
+            <a href="exhibition.html">EXHIBITION</a>
+            <a href="explore.html">EXPLORE</a>
+          </div>
+        </div>
+        <div class="news_btn">
+          <a href="/events.html"><button>NEWS</button></a>
+        </div>
+        <div class="work_btn">
+          <a href="work.html"><button>WORK</button></a>
+        </div>
+      </nav>
+      <div class="cta_container">
+        <p>Open now</p>
+        <p>tuesday 10:00-16:00</p>
+        <div class="cta_btns">
+          <a href="cart.html">Cart</a><!--cart icon-->
+          <a href="tickets.html"><button>Buy ticket</button></a>
+        </div>
+      </div>
+    </header>
+
+
+
+  <div class=”a-main-container”>
+    <main class="a-main-wrapper">
     <h1>Events</h1>
 <!-----------------------SECTION 1--------------------->
     <section class="events section1 ">
@@ -67,7 +103,8 @@
       <div class="events-img">
         <img src="images/solar-energy-img.jpg" alt="Large solar cellar out on a field">
       </div>
-</main>
+  </main>
+</div>
 
 
 
@@ -84,30 +121,31 @@
     </div>
     
     <div class="totop">
-    <h3 class="footerh3"><a href="#">Back to top</h3></a>
-        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      <a href="#">Back to top</a>
+        <i class="fa-solid fa-arrow-up"></i>
       </div>
     </div>
     <div class="infocont">
       <div class="location">
-    <h3 class="footerh3">Location</h3>
+        <h3 class="footerh3">Location</h3>
         <p>Wergelandsveien 29</p> 
         <p>0167 Oslo</p>
       </div>
-      <div class="opening">
+    <div class="opening">
        <h3 class="footerh3">Opening hours</h3>
           <p>Monday: Closed</p>
           <p>Tuesday-Thursday: 10:00 - 16:00</p>
           <p>Friday: 10:00 – 19:00</p>
           <p>Saturday: 9:00 – 16:00</p>
           <p>Sunday: 9:00 – 13:00</p>
-        </div>
+      </div>
 
-        <div class="newsletter">
-          <h3 class="footerh3">Newsletter</h3>
-            <form class="newsletter">
+       <div class="newsletter">
+            <h3 class="footerh3">Newsletter</h3>
+            <form class="newsletter-mail">
             <input type="email" placeholder="Enter email">
-          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>   
+            <i class="fa-solid fa-arrow-right"></i>
+           </form>   
       </div>
       <div class="links">
           <h3 class="footerh3">Quick links</h3>
@@ -131,7 +169,7 @@
       </div>
        <div class="copyright">
           <div class="copy-text">
-          <p>&copy 2025 Community Science Museum</p>
+          <p>&copy; 2025 Community Science Museum</p>
           </div>
       <div class="terms-copy">
         <a href="#">Terms and condition</a>
