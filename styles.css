@@ -173,11 +173,7 @@ font-weight: 600;
   list-style: none;
 }
 
-.a-img {
-  width: 100%;
-  height: auto;
-  display: block;
-} */
+
 
 /**********Variables***********/
 
@@ -225,6 +221,12 @@ font-weight: 600;
   flex-grow: 1;
   flex-wrap: wrap;
 }
+
+.a-img {
+  width: 100%;
+  height: auto;
+  display: block;
+} 
 
 /********************EXPLORE**********************/
 
