@@ -166,19 +166,6 @@ font-weight: 600;
   box-sizing: border-box;
 }
 
-/*nav, li, a {
-  gap: 1rem 3rem;
-  text-decoration: none;
-  color: var(--text-clr);
-  list-style: none;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-} */
-
 /**********Variables***********/
 
 :root {
@@ -210,16 +197,34 @@ img {
   h3 {font-family: "inter";}
   p  {font-family: "inter";}
 
+/****Need this for my styling/Anna*/
 
-
-
-
-
+.a-main-container {
+  max-width: 1728px;
+  margin-inline: auto;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  color: var(--text-clr);
+}
 
 .a-main-wrapper {
   padding: var(--padding-sm);
   flex-grow: 1;
   flex-wrap: wrap;
+}
+
+.a-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*need this later.
+li, a {
+  gap: 1rem 3rem;
+  text-decoration: none;
+  color: var(--text-clr);
+  list-style: none;
 }
 
 /********************EXPLORE**********************/
