@@ -210,11 +210,15 @@ font-weight: 600;
   h3 {font-family: "inter";}
   p  {font-family: "inter";}
 
+/****Need this for my styling/Anna*/
 
-
-
-
-
+.a-main-container {
+  max-width: 1728px;
+  margin-inline: auto;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  color: var(--text-clr);
+}
 
 .a-main-wrapper {
   padding: var(--padding-sm);
