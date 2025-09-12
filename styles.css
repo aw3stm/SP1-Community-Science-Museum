@@ -504,7 +504,9 @@ grid-template-areas:
   padding: 2rem;
 }
 
-.work-img, .job-img, .volunteer-img {
+.work-img, 
+.job-img, 
+.volunteer-img {
   grid-area: work-img;
 }
 
@@ -512,6 +514,7 @@ grid-template-areas:
 .volunteer-section, .job-section {
   position: relative;
 }
+
 .work-title {
   position: absolute;
   grid-area: work-title;
