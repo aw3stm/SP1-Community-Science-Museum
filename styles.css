@@ -2,9 +2,9 @@
 .header_logo { 
 display: flex; 
 flex-wrap: none; 
-width: 180px; 
+max-width: 180px; 
 height: 100%; 
-padding: 2rem; 
+padding: 0rem 2rem; 
 } 
 
 .header_logo img { 
@@ -14,7 +14,7 @@ max-height: 100%;
 
 .header_container {
     width: 100%;
-    height: 180px;
+    max-height: 140px;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -25,13 +25,17 @@ max-height: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  overflow: hidden;
-  gap: 1rem;
+  align-items: center;
+  gap: 6rem;
 }
 
 nav ul li {
   list-style: none;
   text-decoration: none;
+}
+
+.home_dropdown li{
+  position: relative;
 }
 
 nav li {
@@ -49,9 +53,71 @@ nav ul li a {
   font-style: normal;
 }
 
+nav ul li ul {
+  display: block;
+  position: absolute;
+  background-color: white;
+}
+
 a {
   color: inherit; 
   text-decoration: none;
+}
+
+.home_dropdown {
+  display: relative;
+  padding: 0 1rem;
+}
+
+.home_content {
+ display: none;
+ position: absolute;
+ background-color: white;
+ text-align: center;
+}
+
+.home_content li {
+ padding: 10px 20px;
+}
+
+.home_content li:hover {
+ color: #23E7C7;
+}
+
+.home_dropdown:hover .home_content  {
+ display: block;
+}
+
+.experience_dropdown {
+  display: relative;
+  padding: 0 1rem;
+  
+}
+
+.experience_content {
+ display: none;
+ position: absolute;
+ background-color: white;
+ text-align: center;
+}
+
+.experience_content li {
+ padding: 10px 20px;
+}
+
+.experience_content li:hover {
+ color: #23E7C7;
+}
+
+.experience_dropdown:hover .experience_content  {
+ display: block;
+}
+
+.news:hover {
+  color: #23E7C7;
+}
+.work:hover {
+  color: #23E7C7;
 }
 
 /*****home page******/
@@ -73,6 +139,20 @@ width: 100%;
 height: 100%;
 }
 
+.welcome__content h1 {
+color: #000;
+font-family: Prompt;
+font-size: 72px;
+font-style: normal;
+font-weight: 700;
+}
+.welcome__content p {
+color: #000;
+font-family: "Anek Latin";
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+}
 
 
 /******************Reset*******************/
@@ -117,7 +197,7 @@ img {
   --p: semibold 20px "inter" arial, sans-serif, Helvetica;
   --text-clr: #000;
   /*--padding-sm: 1rem 3rem;
-  --padding-m: 2rem 5rem; */ /*la oss sette padding for boddy i stedet så det ikke påvirker footer og header*/
+  --padding-m: 2rem 5rem; */ /*la oss sette padding for body i stedet så det ikke påvirker footer og header*/
   --footer-clr: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
 }
 
