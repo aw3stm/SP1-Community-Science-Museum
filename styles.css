@@ -194,13 +194,10 @@ button {
   flex-wrap: wrap;
 }
 
-/********END OF GENERAL STYLES********/
+/*************END************/
 
 
-/********************EXPLORE**********
-*************************/
-
-
+/********************EXPLORE**********************/
 
 .explore_title {
   text-align: center;
@@ -220,7 +217,7 @@ button {
 }
 
 .kids_img, .teachers_img, 
-.researchers_img * {
+.researchers_img * img {
 border-radius: 8px;
 width: 100%;
 max-width: 36rem;
@@ -491,6 +488,7 @@ h1 {
 
 .work-container {
 max-width: 98rem;
+margin-bottom: 4rem;
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto 1fr auto;
@@ -506,18 +504,45 @@ grid-template-areas:
   padding: 2rem;
 }
 
-.work-img {
+.work-img, .job-img, .volunteer-img {
   grid-area: work-img;
 }
 
+.donation-section, 
+.volunteer-section, .job-section {
+  position: relative;
+}
 .work-title {
+  position: absolute;
   grid-area: work-title;
   background-color: #BDFCF9;
   text-align: center;
   padding: 1rem 8rem;
-  margin: 0 0 1rem 0;
-  max-width: 24rem;
-  margin-inline: auto;
+  z-index: 1;
+  bottom: -20px;
+  left: -200px;
+}
+
+.volunteer-title {
+  position: absolute;
+  grid-area: work-title;
+  background-color: #BDFCF9;
+  text-align: center;
+  padding: 1rem 8rem;
+  z-index: 1;
+  bottom: -20px;
+  left: -180px;
+}
+
+.job-title {
+  position: absolute;
+  grid-area: work-title;
+  background-color: #BDFCF9;
+  text-align: center;
+  padding: 1rem 8rem;
+  z-index: 1;
+  bottom: -20px;
+  left: -160px;
 }
 
 
