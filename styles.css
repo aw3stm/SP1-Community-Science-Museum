@@ -1,3 +1,88 @@
+/******Header/Navbar******/
+
+.header_container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 2rem 0rem;
+}  
+
+.header_logo {
+  display: flex;
+  flex-wrap: none;
+  width: 140px;
+  height: 100%;
+  margin: 1rem;
+  }
+
+  .header_logo img {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .navbar_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  .navbar_container a {
+    float: left;
+    font-size: 16px;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .home_dropdown {
+    float: left;
+    
+  }
+
+  .home_dropdown .home_dropdown button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .home_dropdown:hover .dropdown-content {
+    display: block;
+  }
+/********in progress**********/
+  .navbar_container a:hover, .navbar_container button:hover {
+    background-color:white;
+  }
+
 /******************Reset*******************/
 *,
 *::before,
@@ -10,7 +95,8 @@
 nav, li, a {
   gap: 1rem 3rem;
   text-decoration: none;
-  color: var(--text-clr); 
+  color: var(--text-clr);
+  list-style: none;
 }
 
 img {
@@ -31,26 +117,41 @@ img {
   --events-prof-bg: #FAF5F2;
   --events-night-bg: #EFC593;
   --events-energ-bg: #E2FAF9;
+  --work-bg: #D9D9D9;
   --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
+  --footer-clr: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
+
   --primary-text-clr: #000;
   --font-family: "inter", arial, sans-serif, helvetica;
   --h1: semibold 40px "prompt", arial, sans-serif, Helvetica;
-  --h2: semibold 32px "anek italic" arial, sans-serif, Helvetica;
+  --h2: semibold 32px "anek latin" arial, sans-serif, Helvetica;
   --h3: semibold 24 "inter" arial, sans-serif, helvetica;
-  --p: semibold 20px "inter" arial, sans-serif, Helvetica;
+  --p: normal 20px "anek latin" arial, sans-serif, Helvetica;
   --text-clr: #000;
+
   --padding-sm: 1rem 3rem;
   --padding-m: 2rem 5rem;
-  --footer-clr: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
+  
+  --btn-clr:#23E7C7;
+  --btn-text:#000;
+  --btn-radius: 0.5rem;
+  --btn-font-size: 1.25rem;
+
 }
 
+  h1 { font-family: "prompt";}
+  h2 {font-family: "anek latin";}
+  h3 {font-family: "inter";}
+  p  {font-family: "inter";}
+
 /**************************GENERAL HTML STYLE********************/
-.container {
+/*.container {
   max-width: 1728px;
   margin-inline: auto; 
 }
 
 body {
+  min-height: 100vh;
   font-family: var(--font-family);
   color:var(--text-clr);
 }
@@ -66,10 +167,38 @@ main {
   flex-grow: 1;
   flex-wrap: wrap;
 }
+
+button {
+  padding: 1rem 3rem;
+  border-style: none;
+  border-radius: 0.5rem;
+  font-size: var(--btn-font-size);
+  background-color: var(--button-clr);
+  cursor: pointer;
+  
+}
 /********END OF GENERAL STYLES********/
 
-/********************EXPLORE**********
-*************************/
+/*****General styling for Annas pages******/
+.a-main-container {
+  max-width: 1728px;
+  margin-inline: auto;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  color: var(--text-clr);
+}
+
+.a-main-wrapper {
+  padding: var(--padding-sm);
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+/*************END************/
+
+
+/********************EXPLORE**********************/
+
 .explore_title {
   text-align: center;
   margin-bottom: 2rem;
@@ -88,7 +217,7 @@ main {
 }
 
 .kids_img, .teachers_img, 
-.researchers_img * {
+.researchers_img * img {
 border-radius: 8px;
 width: 100%;
 max-width: 36rem;
@@ -197,21 +326,45 @@ footer {
 
 .totop {
   display: flex;
-  gap: 1rem;
   margin-inline: auto;
 }
 
+.to-top-text {
+  font-family: "inter";
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .infocont {
- 
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   margin-inline: auto;
 }
 
 .location, .opening, 
 .sponsor-title, .newsletter {
   margin-inline: auto;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: 1rem 0 1rem 0;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  border-radius: 0.5rem;
+  background: none;
+}
+input::placeholder {
+  color: #000;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.newsletter-mail {
+  display: flex;
+  align-items: center;
 }
 
 .links {
@@ -233,16 +386,9 @@ footer {
 
 .sponsor-name {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
   margin-inline: auto;
-}
-
-.sponsortext {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-inline: auto;
-  align-items: flex-end;
 }
 
 .copyright {
@@ -294,7 +440,7 @@ h1 {
   margin-bottom: 0.8rem;
 }
 
-/************EVENTS**********/
+/****************************EVENTS********************/
 
 .events {
   max-width: 72rem;
@@ -332,10 +478,75 @@ h1 {
 }
 
 
+/*********************GET INVOLVED/WORK********************/
+.work-get-involved {
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 36rem;
+  margin-inline: auto;
+}
 
+.work-container {
+max-width: 98rem;
+margin-bottom: 4rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto 1fr auto;
+grid-template-areas:
+"work-text work-img"
+"work-title work-title";
+}
 
+.work-text {
+  grid-area: work-text;
+  align-content: center;
+  background-color: var(--work-bg);
+  padding: 2rem;
+}
 
+.work-img, 
+.job-img, 
+.volunteer-img {
+  grid-area: work-img;
+}
 
+.donation-section, 
+.volunteer-section, .job-section {
+  position: relative;
+}
+
+.work-title {
+  position: absolute;
+  grid-area: work-title;
+  background-color: #BDFCF9;
+  text-align: center;
+  padding: 1rem 8rem;
+  z-index: 1;
+  bottom: -20px;
+  left: -200px;
+}
+
+.volunteer-title {
+  position: absolute;
+  grid-area: work-title;
+  background-color: #BDFCF9;
+  text-align: center;
+  padding: 1rem 8rem;
+  z-index: 1;
+  bottom: -20px;
+  left: -180px;
+}
+
+.job-title {
+  position: absolute;
+  grid-area: work-title;
+  background-color: #BDFCF9;
+  text-align: center;
+  padding: 1rem 8rem;
+  z-index: 1;
+  bottom: -20px;
+  left: -160px;
+}
 
 
  /*********** MEDIA QUIERIES************/
