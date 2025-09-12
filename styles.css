@@ -166,15 +166,6 @@ font-weight: 600;
   box-sizing: border-box;
 }
 
-  li, a {
-  gap: 1rem 3rem;
-  text-decoration: none;
-  color: var(--text-clr);
-  list-style: none;
-}
-
-
-
 /**********Variables***********/
 
 :root {
@@ -226,7 +217,15 @@ font-weight: 600;
   width: 100%;
   height: auto;
   display: block;
-} 
+}
+
+/*need this later.
+li, a {
+  gap: 1rem 3rem;
+  text-decoration: none;
+  color: var(--text-clr);
+  list-style: none;
+}
 
 /********************EXPLORE**********************/
 
