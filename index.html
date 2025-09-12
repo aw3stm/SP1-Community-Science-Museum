@@ -4,53 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <!--script src crossorgin-->
 </head>
-<!--Need nav bar and stylesheet-->
 <body> <!--class?-->
     <header class="header_container">
-      <div class="header_logo">
-        <img src="/ico/Logo_navbar.png">
+         <div class="header_logo">
+         <img src="/ico/Logo_navbar.png">
       </div>
       <nav class="navbar_container">
-        <div class="home_dropdown">
-          <a href="/index.html"><button>HOME</button></a>
-            <div class="dropdown-content">
-              <a href="/about.html">ABOUT</a>
-              <a href="/contact.html">CONTACT</a>
-              <a href="/opening.html">OPENING</a>
-              <a href="/prices.html">PRICES</a>
-              <a href="/tickets.html">TICKETS</a>
-            </div>
-        </div>
-        <div class="experience_dropdown">
-          <button>EXPERIENCE</button></a>
-          <div class="dropdown-content"> <!---same class wrong?-->
-            <a href="/exhibition.html">EXHIBITION</a>
-            <a href="/explore.html">EXPLORE</a>
+         <!--do i need divs-->
+          <li><a href="/index.html">HOME</a>
+                <ul>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                    <li><a href="/opening.html">OPENING</a></li>
+                    <li><a href="/prices.html">PRICES</a></li>
+                    <li><a href="/tickets.html">TICKETS</a></li>
+               </ul>
+             </li>
+          <div class="experience_dropdown">
+          <li><a href="#">EXPERIENCE</a>
+              <ul>
+                 <li><a href="/exhibition.html">EXHIBITION</a></li>
+                  <li><a href="/explore.html">EXPLORE</a></li>
+              </ul>
           </div>
         </div>
-        <div class="news_btn">
-          <a href="/events.html"><button>NEWS</button></a>
+        <div class="news">
+          <li><a href="/events.html">NEWS</a></li>
         </div>
-        <div class="work_btn">
-          <a href="/work.html"><button>WORK</button></a>
+        <div class="work">
+          <li><a href="/work.html">WORK</a></li>
         </div>
       </nav>
       <div class="cta_container">
         <p>Open now</p>
-        <p>tuesday 10:00-16:00</p>
+        <p>Tuesday 10:00-16:00</p>
         <div class="cta_btns">
           <a href="/cart.html">Cart</a><!--cart icon-->
+          <div class="cta_ticket">
           <a href="/tickets.html"><button>Buy ticket</button></a>
         </div>
+        </div>
+      </div>
       </div>
     </header>
     <main>
       <section class="welcome">
         <div class="hero_img">
           <img src="images/header-home-img.jpg" alt="hero"/>
+        </div>
+        <div class="gradient_box">
         </div>
         <div class="museum">
         <h1>NEW COMMUNITY SCIENCE MUSEUM</h1>

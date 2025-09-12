@@ -1,88 +1,59 @@
 /******Header/Navbar******/
+.header_logo { 
+display: flex; 
+flex-wrap: none; 
+width: 180px; 
+height: 100%; 
+margin: 2rem; 
+} 
+
+.header_logo img { 
+width: 100%; 
+max-height: 100%; 
+} 
 
 .header_container {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-padding: 2rem 0rem;
-}  
-
-.header_logo {
-  display: flex;
-  flex-wrap: none;
-  width: 140px;
-  height: 100%;
-  margin: 1rem;
-  }
-
-  .header_logo img {
     width: 100%;
-    max-height: 100%;
-  }
-
-  .navbar_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    height: 180px;
     padding: 1rem;
-    overflow: hidden;
-    background-color: white;
-  }
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
 
-  .navbar_container a {
-    float: left;
-    font-size: 16px;
-    color:white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+nav ul li {
+  list-style: none;
+}
 
-  .home_dropdown {
-    float: left;
-    
-  }
+nav li {
+  list-style: none;
+  font-family: inter;
+  color: #000; 
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+}
 
-  .home_dropdown .home_dropdown button {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
+nav ul li a {
+  font-family: inter;
+  color: #000; 
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+}
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    z-index: 1;
-  }
+.hero_img {
+width: 866px;
+height: 754px;
+flex-shrink: 0;
+}
 
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-
-  .home_dropdown:hover .dropdown-content {
-    display: block;
-  }
-/********in progress**********/
-  .navbar_container a:hover, .navbar_container button:hover {
-    background-color:white;
-  }
-
+/***fix gradient box****/
+.gradient_box {
+width: 864px;
+height: 752px;
+ --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
+}
 /******************Reset*******************/
 *,
 *::before,
