@@ -29,6 +29,7 @@ footer {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 
 .logo {
@@ -130,7 +131,7 @@ li, a {
 /*************footer end*************/
 
 
-@media screen and (max-width:992px){
+@media screen and (max-width:1024px){
   .infocont{
     display: grid;
     justify-items: start;
@@ -145,6 +146,7 @@ li, a {
   }
    .opening {
     grid-area: opening;
+    justify-self: center;
   }
    .newsletter {
     grid-area: newsletter;
@@ -152,15 +154,33 @@ li, a {
   }
   .links {
     grid-area: links; 
+    justify-self: center;
+    margin-right: 8.5em;
+  }
+  .logoscont{
+    justify-content: center;
+    
+  }
+  .totop, .logo{
+    margin: 0;
   }
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:768px){
+  footer {
+    max-width: 100%;
+  }
+
   .infocont {
     display: grid;
     grid-template-columns: 1fr;
+    margin-inline: auto;
   }
-.opening, .newsletter, .links, .sponsors {
+
+.opening, 
+.newsletter, 
+.links, 
+.sponsors {
   display: none;   
 }
 .location {
@@ -174,7 +194,11 @@ li, a {
 }
 
 .totop {
-  margin: 0 0 0 1.4rem;
+  margin-inline: auto;
+  align-self: center;
+}
+
+.logo{
   align-self: center;
 }
 
