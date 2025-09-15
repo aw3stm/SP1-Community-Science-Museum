@@ -20,8 +20,9 @@
 
 /*************footer start***********/
 footer {
-  background: var(--footer-clr);
   min-height: 30vh;
+  width: 100%;
+  background: var(--footer-clr);
   font-family: "inter", Arial, Helvetica, sans-serif;
 }
 
@@ -40,9 +41,9 @@ footer {
 
 .totop {
   display: flex;
-  font-weight: 700;
   font-family: "inter" Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
+  font-weight: 700;
   margin-inline: auto;  
 }
 
