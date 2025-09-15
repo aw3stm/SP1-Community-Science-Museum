@@ -132,6 +132,7 @@ li, a {
 /*************footer end*************/
 
 
+
 @media screen and (max-width:1024px){
   .infocont{
     display: grid;
@@ -158,14 +159,8 @@ li, a {
     justify-self: center;
     margin-right: 8.5em;
   }
-  .logoscont{
-    justify-content: center;
-    
-  }
-  .totop, .logo{
-    margin: 0;
-  }
 }
+
 
 @media screen and (max-width:768px){
   footer {
