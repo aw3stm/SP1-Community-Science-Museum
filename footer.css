@@ -130,7 +130,6 @@ li, a {
 }
 
 /*************footer end*************/
-
 @media screen and (max-width:1024px){
   footer {
     max-width: 100%;
@@ -148,6 +147,7 @@ li, a {
 .footerh3 {
   display: none;   
 }
+  
 .location > * {
   text-align: center;
   text-transform: uppercase;
@@ -179,5 +179,4 @@ li, a {
 .copyright * {
   align-self: center;
 }
-
 }
