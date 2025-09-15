@@ -131,43 +131,7 @@ li, a {
 
 /*************footer end*************/
 
-
 @media screen and (max-width:1024px){
-  .infocont{
-    display: grid;
-    justify-items: start;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "location opening"
-    "newsletter links";
-  }
-  .location {
-    grid-area: location;
-    justify-self: center;
-  }
-   .opening {
-    grid-area: opening;
-    justify-self: center;
-  }
-   .newsletter {
-    grid-area: newsletter;
-    justify-self: center;
-  }
-  .links {
-    grid-area: links; 
-    justify-self: center;
-    margin-right: 8.5em;
-  }
-  .logoscont{
-    justify-content: center;
-    
-  }
-  .totop, .logo{
-    margin: 0;
-  }
-}
-
-@media screen and (max-width:768px){
   footer {
     max-width: 100%;
   }
