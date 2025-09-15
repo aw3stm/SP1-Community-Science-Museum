@@ -1,4 +1,6 @@
-/******Header/Navbar******/
+/******Header/Navbar/TESTER******/
+/******New navbar is being coded in another file*******/
+/****do not remove home page code yet****/
 .header_logo { 
 display: flex; 
 flex-wrap: none; 
@@ -119,6 +121,7 @@ a {
 .work:hover {
   color: #23E7C7;
 }
+/***END NAVBAR***/
 
 /*****home page******/
 .welcome {
@@ -153,10 +156,42 @@ font-size: 32px;
 font-style: normal;
 font-weight: 600;
 }
+/*********End of homepage**********/
 
+/*********Start About page*********/
+/*******End About page**********/
 
+/*******Start Contact page********/
+/*******End Contact page********/
 
+/********Start opening page*****/
+/********End opening page******/
 
+/*******Start price page******/
+/*******End price page*******/
+
+/*******start Tickets page*******/
+/********Endt Tickets page********/
+
+/*******start Exhibishion page*****/
+/********end exhibishion page*****/
+
+/*****start explore page*****/
+/*****end explore page***/
+
+/*****start events/news page/*****/
+/*****End event page****/
+
+/*******start get involved/work page****/
+/*******End work page******/
+
+/****start emty cart page*****/
+/******end emty cart page***/
+
+/****New footer here*****/
+/*****footer end******/
+
+/****NEEDS A CLEAN UP********/
 /******************Reset*******************/
 *,
 *::before,
