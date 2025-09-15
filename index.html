@@ -4,54 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d73d073248.js" crossorigin="anonymous"></script>
 </head>
-
+<body>
+    <!--Start of Header/Navbar-->
     <header class="header_container">
-      <div class="header_logo">
-        <img src="/ico/Logo_navbar.png">
-      </div>
-      <nav class="navbar_container">
-        <div class="home_dropdown">
-          <li><a href="/index.html">HOME</a>
-            <ul class="home_content">
-              <li><a href="/about.html">ABOUT</a></li>
-              <li><a href="/contact.html">CONTACT</a></li>
-              <li><a href="/opening.html">OPENING</a></li>
-              <li><a href="/prices.html">PRICES</a></li>
-              <li><a href="/tickets.html">TICKETS</a></li>
-            </ul>
-          </li>
+        <div class="header_logo">
+            <img src="/ico/Logo_navbar.png">
         </div>
-        <div class="experience_dropdown">
-          <li><a href="#">EXPERIENCE</a>
-            <ul class="experience_content">
-              <li><a href="/exhibition.html">EXHIBITION</a></li>
-              <li><a href="/explore.html">EXPLORE</a></li>
-            </ul>
-          </li>
+        <nav class="navbar_container">
+            <div class="home_dropdown">
+                <li><a href="/index.html">HOME</a>
+                    <ul class="home_content">
+                        <li><a href="/about.html">ABOUT</a></li>
+                        <li><a href="/contact.html">CONTACT</a></li>
+                        <li><a href="/opening.html">OPENING</a></li>
+                        <li><a href="/prices.html">PRICES</a></li>
+                        <li><a href="/tickets.html">TICKETS</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="experience_dropdown">
+                <li><a href="/exhibition.html">EXHIBITION</a>
+                    <ul class="experience_content">
+                    <li><a href="/explore.html">EXPLORE</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="news">
+                <li><a href="/events.html">NEWS</a></li>
+            </div>
+            <div class="work">
+                <li><a href="/work.html">WORK</a></li>
+            </div>
+        </nav>
+        <div class="cta_container">
+            <div class="cta_btns">
+                <div class="cta_cart">
+                    <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="cta_ticket">
+                    <p class="open">Open now</p>
+                    <p>Tuesday 10:00-16:00</p>
+                    <a href="/tickets.html"><button>Buy ticket</button></a>
+                </div>
+            </div>
         </div>
-        <div class="news">
-          <li><a href="/events.html">NEWS</a></li>
+        <div class="hamburger">
+            <div class="ham-btn">
+                <div><i class="fa-solid fa-bars"></i>
+                    <ul class="hamburger_content">
+                        <li><a href="/index.html">HOME</a></li>
+                        <li><a href="/about.html">ABOUT</a></li>
+                        <li><a href="/events.html">NEWS</a></li>
+                        <li><a href="/exhibition.html">EXHIBITION</a></li>
+                        <li><a href="/explore.html">EXPLORE</a></li>
+                        <li><a href="/opening.html">OPENING</a></li>
+                        <li><a href="/prices.html">PRICES</a></li>
+                        <li><a href="/tickets.html">TICKETS</a></li>
+                        <li><a href="/work.html">WORK</a></li>
+                        <li><a href="/contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="work">
-          <li><a href="/work.html">WORK</a></li>
-        </div>
-      </nav>
-      <div class="cta_container">
-        <p>Open now</p>
-        <p>Tuesday 10:00-16:00</p>
-        <div class="cta_btns">
-             <a href="/cart.html">Cart</a><!--cart icon-->
-  <div class="cta_ticket">
-          <a href="/tickets.html"><button>Buy ticket</button></a>
-        </div>
-      </div>
-      </div>
     </header>
     <main>
       <section class="welcome">
@@ -68,32 +88,55 @@
           <div class="expect">
             <h2>WHAT TO EXPECT</h2> 
           </div>
-            <div class="stars">
-              <h3>YOUNG STARS CLUB</h3>
-              <img src="images/dino-home.jpg" alt="dino"/>
-              <p>Young Stars club which meets once a week on a Saturday between 10:00 and 13:00.
-              Where you'll get to explore and experiment with our team of experts.</p>
+          <div class="expect_wrapper">
+            <div class="expect--card">
+              <div class="expect--card_head">
+                <h3>YOUNG STARS CLUB</h3>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="expect--card_img">
+                <img src="images/dino-home.jpg" alt="dino"/>
+              </div>
+              <div class="expect--card_text">
+                <p>Young Stars club which meets once a week on a Saturday between 10:00 and 13:00.
+                Where you'll get to explore and experiment with our team of experts.</p>
+              </div>
             </div>
-            <div class="above">
-              <img src="images/astro-home.jpg" alt="astronaut"/>
-              <h3>THE SKYE ABOVE US</h3>
-              <p>Explores the night sky and what we can see and know about the universe around us.</p>
+            <div class="expect--card">
+              <div class="expect--card_head">
+                <h3>THE SKYE ABOVE US</h3>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="expect--card_img">
+                <img src="images/astro-home.jpg" alt="astronaut"/>
+              </div>
+              <div class="expect--card_text">
+                <p>Explores the night sky and what we can see and know about the universe around us.</p>
+              </div>
             </div>
-<div class="reaserchers">
-  <img src="images/medic-img.jpg" alt="researchers_img"/>
-  <h3>RESEARCHERS</h3>
-  <p>Are you looking to get involved with our team of researchers and academics? </p>
-</div>
+            <div class="expect--card">
+              <div class="expect--card_head">
+                <h3>RESEARCHERS</h3>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="expect--card_img">
+                <img src="images/medic-img.jpg" alt="researchers_img"/>
+              </div>
+              <div class="expect--card_text">
+                <p>Are you looking to get involved with our team of researchers and academics? </p>
+              </div>
+            </div>
+          </div>
         </section>
         <!--Unsure how many divs needed-->
         <section class="collage">
           <div class="collage_container-a">
-           <img src="images/plane-img.jpg" alt="plane"/>
-           <p>VISITING PROFESSOR OF AERONAUTICS</p>
-           <img src="images/rocket-img.jpg" alt="rocket"/>
-           <p>TAKE OUR QUIZ</p>
-           <img src="images/space-img.jpg" alt="space"/>
-           <p>ARE THERE ALIENS?</p>
+          <img src="images/plane-img.jpg" alt="plane"/>
+        <p>VISITING PROFESSOR OF AERONAUTICS</p>
+        <img src="images/rocket-img.jpg" alt="rocket"/>
+          <p>TAKE OUR QUIZ</p>
+        <img src="images/space-img.jpg" alt="space"/>
+          <p>ARE THERE ALIENS?</p>
           </div>
         </section>
         <section class="shop">
@@ -102,76 +145,6 @@
           <img src="images/shop-img.jpg" alt="shop"/>
           <p>SHOP</p>
         </section>
-     </main>
-     <!--I think you said you updated footer is this correct one-->
-     
-   <footer>
-    <div class="logoscont">
-        <div class="logo">
-    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-    </div>
-    
-    <div class="totop">
-    <h3 class="footerh3"><a href="#">Back to top</h3></a>
-        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
-      </div>
-    </div>
-    <div class="infocont">
-      <div class="location">
-    <h3 class="footerh3">Location</h3>
-        <p>Wergelandsveien 29</p> 
-        <p>0167 Oslo</p>
-      </div>
-      <div class="opening">
-       <h3 class="footerh3">Opening hours</h3>
-          <p>Monday: Closed</p>
-          <p>Tuesday-Thursday: 10:00 - 16:00</p>
-          <p>Friday: 10:00 – 19:00</p>
-          <p>Saturday: 9:00 – 16:00</p>
-          <p>Sunday: 9:00 – 13:00</p>
-        </div>
-
-         <div class="newsletter">
-            <h3 class="footerh3">Newsletter</h3>
-            <form class="newsletter-mail">
-            <input type="email" placeholder="Enter email">
-            <i class="fa-solid fa-arrow-right"></i>
-          </form>   
-      </div>
-      <div class="links">
-          <h3 class="footerh3">Quick links</h3>
-            <a href="#">Q&A</a>
-            <a href="#">Contact us</a>
-            <a href="#">Your visit</a>
-            <a href="#">Locations</a>
-            <a href="#">Jobs</a>
-        </div> 
-    </div>
-
-      <div class="sponsors">
-        <div class="sponsor-title">        
-          <h3>Partners and founders</h3>
-      </div>
-      <div class="sponsor-name">
-          <h4>NordTek Solutions</h4>
-          <h4>Fjordkraft Energi</h4>
-          <h4>Nordlys Stiftelsen</h4>
-        </div>
-      </div>
-       <div class="copyright">
-          <div class="copy-text">
-          <p>&copy 2025 Community Science Museum</p>
-          </div>
-      <div class="terms-copy">
-        <a href="#">Terms and condition</a>
-        <a href="#">Privacy and cookies</a>
-        <a href="#">Terms of use</a>
-        <a href="#">FAQ</a>
-        </div>
-      </div>
-    </footer>
+    </main>
   </body>
 </html>
