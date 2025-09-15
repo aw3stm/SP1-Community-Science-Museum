@@ -139,28 +139,31 @@ li, a {
   .infocont {
     display: grid;
     grid-template-columns: 1fr;
-    margin-inline: auto;
   }
 
 .opening, 
 .newsletter, 
 .links, 
-.sponsors {
+.sponsors,
+.footerh3 {
   display: none;   
 }
-.location {
-  align-self: center;
+.location > * {
   text-align: center;
   text-transform: uppercase;
+  margin-left: 5.2rem;
+  font-weight: 700;
 }
 
 .logoscont {
   flex-direction: column-reverse;
+  margin-bottom: 0;
 }
 
 .totop {
-  margin-inline: auto;
-  align-self: center;
+  flex-direction: column-reverse;
+  text-align: center;
+  
 }
 
 .logo{
