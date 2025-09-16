@@ -130,39 +130,7 @@ li, a {
 }
 
 /*************footer end*************/
-
-
-
 @media screen and (max-width:1024px){
-  .infocont{
-    display: grid;
-    justify-items: start;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "location opening"
-    "newsletter links";
-  }
-  .location {
-    grid-area: location;
-    justify-self: center;
-  }
-   .opening {
-    grid-area: opening;
-    justify-self: center;
-  }
-   .newsletter {
-    grid-area: newsletter;
-    justify-self: center;
-  }
-  .links {
-    grid-area: links; 
-    justify-self: center;
-    margin-right: 8.5em;
-  }
-}
-
-
-@media screen and (max-width:768px){
   footer {
     max-width: 100%;
   }
@@ -170,28 +138,32 @@ li, a {
   .infocont {
     display: grid;
     grid-template-columns: 1fr;
-    margin-inline: auto;
   }
 
 .opening, 
 .newsletter, 
 .links, 
-.sponsors {
+.sponsors,
+.footerh3 {
   display: none;   
 }
-.location {
-  align-self: center;
+  
+.location > * {
   text-align: center;
   text-transform: uppercase;
+  margin-left: 5.2rem;
+  font-weight: 700;
 }
 
 .logoscont {
   flex-direction: column-reverse;
+  margin-bottom: 0;
 }
 
 .totop {
-  margin-inline: auto;
-  align-self: center;
+  flex-direction: column-reverse;
+  text-align: center;
+  
 }
 
 .logo{
@@ -207,5 +179,4 @@ li, a {
 .copyright * {
   align-self: center;
 }
-
 }
