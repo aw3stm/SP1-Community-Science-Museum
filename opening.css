@@ -1,0 +1,128 @@
+/******************Reset*******************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**********Variables***********/
+
+:root {
+  --primary-clr: #23E7C7;
+  --button-clr: #23E7C7;
+  --button-hover: #D1F2ED;
+  --explore-bg: #DEFDFC;
+  --explore-title-bg: #BDFCF9;
+  --exh-bg-clr: #F9F9F9;
+  --events-young-sci-bg: #FF738F;
+  --events-prof-bg: #FAF5F2;
+  --events-night-bg: #EFC593;
+  --events-energ-bg: #E2FAF9;
+  --work-bg: #D9D9D9;
+  --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
+  --footer-clr: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
+
+  --primary-text-clr: #000;
+
+  --h1:semibold 2.5rem "prompt", arial, sans-serif, Helvetica;
+  --h2:semibold 2rem "anek latin", arial, sans-serif, Helvetica;
+  --h3:semibold 1.5rem "anek latin", arial, sans-serif, helvetica;
+  --p:semibold 1.25rem "inter", arial, sans-serif, Helvetica;
+  --text-clr: #000;
+
+  --font-h3: semibold 1.5rem "anek latin", arial, sans-serif, helvetica;
+}
+
+/******end of main css*****/
+
+.opening-container {
+width: 100%;
+max-width: 1200px;
+height: 100vh;
+margin: 0 auto;
+font-family: "inter", Arial, 
+Helvetica, sans-serif;
+}
+
+header {
+  height: 15vh;
+  width: 100%;
+}
+
+h1 {
+display: flex;
+justify-content: center;
+font-family: "prompt", Arial, Helvetica, sans-serif;
+}
+
+
+.opening-days {
+max-width: 960px;
+margin: 3rem auto;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+@media only screen and (max-width: 670px){
+  .opening-days h2 {
+    font-size: 18px;
+  }
+}
+
+
+.opening-days-items > span {
+  color: #3DDB8B;
+}
+
+.opening-middle-container {
+  display: flex;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.opening-middle-items, h2, p {
+  margin: .8rem;
+  font-family: "anek latin", Arial, Helvetica,
+   sans-serif;
+
+  p {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+}
+
+.opening-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  
+  p {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 2rem;
+  }
+}
+
+ #opening-btn {
+    background-color: #93F7E7;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 1rem 2rem;
+    font-family: "inter", Arial, Helvetica, 
+    sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+
+  #opening-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+
+
+
