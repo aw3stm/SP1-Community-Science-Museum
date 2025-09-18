@@ -716,7 +716,8 @@ border-radius: 0.5rem;
 margin-bottom: 6rem;
 }
 
-.events-img-2 .img-3, img {
+.events-img-2 img, 
+.events-img-3 img {
 width: 80%;
 max-width: 960px;
 height: 225px;
