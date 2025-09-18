@@ -28,7 +28,7 @@
   --font-family: "inter", arial, sans-serif, helvetica;
   --h1: semibold 40px "prompt", arial, sans-serif, Helvetica;
   --h2: semibold 32px "anek latin" arial, sans-serif, Helvetica;
-  --h3: semibold 24 "inter" arial, sans-serif, helvetica;
+  --h3: semibold 24px "inter" arial, sans-serif, helvetica;
   --p: normal 20px "anek latin" arial, sans-serif, Helvetica;
   --text-clr: #000;
 }
@@ -38,92 +38,80 @@
   h3 {font-family: "anek latin", Arial, Helvetica, sans-serif;}
   p  {font-family: "anek latin", Arial, Helvetica, sans-serif;}
 
-.a-site{
-    max-width: 1440px;
-    min-height: 100vh;
-    padding: 2em 3em;
-    margin-inline: auto;
-    color: #000;
-}
-
-img {
-    width: 100%;
-    max-width: 400px;
-    object-fit: cover;
- }
-
-
-header {
-    min-height: 15vh;
-    background-color: transparent;
-    padding: 3em;
-}
+/******end of main css*****/
 
 h1 {
     margin-bottom: 1em;
     text-align: center;
 }
 
-main {
-    flex: 1;
+p {
+  font-size: 1.25rem;
+  margin: 1rem;
 }
 
-/******end of main css*****/
-
-
+h3 { 
+  font-size: 1.5rem;
+}
 
 .explore_title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
-
 .explore-container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--explore-bg);
-    margin-bottom: 2rem;
-    border-radius: 2rem;
+  width: 80%;
+  max-width: 900px;
+  padding: 3rem;
+  background-color: var(--explore-bg);
+  border-radius: 2rem;
+  margin: 4rem auto;
+}
+
+.explore-top-image {
+  flex: 0 0 auto;
 }
 
 .explore-top-image img {
+    width: 55%;
+    height: auto;
+    display: block; 
     border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+    top: -49px;
+    left: -50px;
 }
 
 .explore-middle-title {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    background-color: var(--explore-title-bg);
-    padding: .8rem .4rem;
-    margin: 1rem 0;
+    width: 16rem;
+    text-align: center;
+    padding: 1.5rem;
+    margin: .5rem auto;
     text-transform: uppercase;
+    border-radius: 0.5rem;
+    background: #F0F0F0;
 }
 
 .explore-bottom-text {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    max-width: 700px;
     text-align: center;
-    justify-content: center;
-    padding: 1rem 4rem 4rem 4rem;
+    padding: 1rem 4rem 5rem 4rem;
     margin: 0 auto;
 }
 
 .kids-title {
     margin: 1rem;
+    text-align: center;
 }
-
 
 .holidays {
   background-color: var(--primary-clr);
-  max-width: 50%;
+  width: 40%;
+  max-width: 700px;
   padding: 4rem;
-  margin-bottom: 4rem;
+  text-align: center;
   margin-inline: auto;
   border-radius: 2rem;
 }
@@ -132,3 +120,58 @@ main {
   text-align: center;
   margin-bottom: 1rem;
 }
+
+
+@media screen and (max-width: 767px){
+
+.explore-container{
+  width: 100%;
+  max-width: 400px;
+  padding: 0%;
+  border-radius: 0%;
+}
+
+.explore-bottom-text {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;  
+}
+
+.explore-middle-title {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 0 1rem auto;
+    border-radius: 0%; 
+}
+
+.explore-top-image img {
+    border-radius: 0%;
+    width: 100%;
+    height: auto;
+    display: block;
+    top: 0px;
+    left: 0px; 
+}
+
+h3 p {
+  width: 40%;
+  max-width: 400px;
+}
+
+ p {
+    font-size: 1rem;
+  }
+
+.holidays {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+}
+
+
+
+
+
