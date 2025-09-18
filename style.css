@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+:root{
+--footer-clr: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
+}
+
 
 
 
@@ -17,6 +21,7 @@
   --button-clr: #23E7C7;
   --button-hover: #D1F2ED;
   --explore-bg: #DEFDFC;
+  --explore-title-bg: #BDFCF9;
   --kids-explore-bg: #DEFDFC;
   --exh-bg-clr: #F9F9F9;
   --events-young-sci-bg: #FF738F;
@@ -698,6 +703,10 @@ border-radius: 0.5rem;
 background-color: var(--exh-bg-clr);
 }
 
+.events p {
+    font-size: 1.125rem;
+}
+
 .section1 {background-color: var(--events-young-sci-bg);}
 .section2 {background-color: var(--events-prof-bg);}
 .section3 {background-color: var(--events-night-bg);}
@@ -716,7 +725,8 @@ border-radius: 0.5rem;
 margin-bottom: 6rem;
 }
 
-.events-img-2 .img-3, img {
+.events-img-2 img, 
+.events-img-3 img {
 width: 80%;
 max-width: 960px;
 height: 225px;
@@ -755,18 +765,13 @@ font-weight: 700;
 margin-top: .9rem;
 }
  
-.events-text h2, p, 
-.text-info {
+.events-text h2, 
+p.text-info,
+.calendar-date  {
 text-align: center;
 width: 100%;
 max-width: 42rem;
 font-family: "anek latin";
-  
-@media screen and (max-width:676px) {
-  font-size: 1rem;
-  width: 80%;
-  margin: 0 auto;
-}
 }
 
 .fa-calendar-days {
@@ -774,6 +779,17 @@ display: flex;
 justify-content: center;
 gap: .5rem;
 font-weight: 700;
+}
+
+@media only screen and (max-width:1024px) {
+  .events-text h2 {
+font-size: 1.125rem;
+width: 80%;
+margin: 0 auto;
+  }
+  p.text-info {
+    font-size: 16px;
+  }
 }
 
 /*Event page ends*/
@@ -872,6 +888,129 @@ p {
   font-size: 16px;
 }
 }
+
+
+/*work/get involved page*/
+
+.bold-mail {
+font-weight: 700;
+}
+
+.get-involved-top {
+max-width: 600px;
+margin: 0 auto;
+margin-top: 2rem;
+text-align: center;
+padding: 2rem;
+}
+
+
+.work-title {
+width: 300px;
+text-align: center;
+background-color: var(--explore-title-bg);
+padding: 1rem;
+margin: 0 auto;
+
+h2 {
+text-transform: uppercase;
+    }
+}
+
+ /*work/get involved ends*/  
+
+
+/*opening hours start*/
+
+.opening-container {
+width: 100%;
+max-width: 960px;
+margin: 0 auto;
+font-family: "inter", Arial, 
+Helvetica, sans-serif;
+}
+
+
+h1 {
+margin-top: 2rem;
+display: flex;
+justify-content: center;
+font-family: "prompt", Arial, Helvetica,
+ sans-serif;
+}
+
+.location-ico {
+  display: flex;
+  align-items: center;
+}
+
+.opening-days{
+max-width: 960px;
+margin: 2rem auto;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+.opening-days h2 {
+  font-size: 1.125rem;
+  padding: .3rem;
+}
+
+.opening-days-items > span {
+  color: #3DDB8B;
+}
+
+.opening-middle-items h2, 
+.opening-middle-items p {
+  margin: .5rem;
+  font-family: "anek latin", Arial, Helvetica,
+   sans-serif;
+}
+
+.opening-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+.opening-button p {
+    font-weight: 700;
+    margin: 2rem;
+  }
+
+
+ #opening-btn {
+    background-color: var(--button-clr);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-family: "inter", Arial, Helvetica, 
+    sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  #opening-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+
+@media only screen and (max-width: 1024px) {
+
+.opening-container {
+width: 80%;
+margin: 0 auto;
+font-family: "inter", Arial, 
+Helvetica, sans-serif;
+}
+  
+.opening-days h2 {
+font-size: 18px;
+}
+}
+
+
 
 
 
@@ -1022,7 +1161,7 @@ input::placeholder {
 .location > * {
   text-align: center;
   text-transform: uppercase;
-  margin-left: 5.2rem;
+  margin-left: 3rem;
   font-weight: 700;
 }
 
