@@ -33,12 +33,12 @@
 
 }
 
-  h1 { font-family: "prompt";}
-  h2 {font-family: "anek latin";}
-  h3 {font-family: "inter";}
-  p  {font-family: "inter";}
+  h1 { font-family: "prompt", Arial, Helvetica, sans-serif;}
+  h2 {font-family: "anek latin", Arial, Helvetica, sans-serif;}
+  h3 {font-family: "inter", Arial, Helvetica, sans-serif;}
+  p  {font-family: "inter",Arial, Helvetica, sans-serif;}
 
-/****Need this for my styling/Anna*/
+
 
 .cosmo-image img {
     width: 100%;
