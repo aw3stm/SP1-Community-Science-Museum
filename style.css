@@ -17,6 +17,7 @@
   --button-clr: #23E7C7;
   --button-hover: #D1F2ED;
   --explore-bg: #DEFDFC;
+  --explore-title-bg: #BDFCF9;
   --kids-explore-bg: #DEFDFC;
   --exh-bg-clr: #F9F9F9;
   --events-young-sci-bg: #FF738F;
@@ -784,6 +785,42 @@ font-weight: 700;
 
 
 
+/*work/get involved page*/
+
+.bold-mail {
+font-weight: 700;
+}
+
+.get-involved-top {
+max-width: 600px;
+margin: 0 auto;
+margin-top: 2rem;
+text-align: center;
+padding: 2rem;
+}
+
+
+.work-title {
+width: 300px;
+text-align: center;
+background-color: var(--explore-title-bg);
+padding: 1rem;
+margin: 0 auto;
+
+h2 {
+text-transform: uppercase;
+    }
+}
+
+ /*work/get involved ends*/  
+
+
+
+
+
+
+
+
 
 
 
@@ -931,7 +968,7 @@ input::placeholder {
 .location > * {
   text-align: center;
   text-transform: uppercase;
-  margin-left: 5.2rem;
+  margin-left: 3rem;
   font-weight: 700;
 }
 
