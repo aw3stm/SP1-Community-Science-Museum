@@ -680,6 +680,106 @@ h3 p {
 
 /*explore page*/
 
+/*events page*/
+
+.events-h1 {
+text-align: center;
+margin: 4rem;
+}
+
+.events {
+width: 80%;
+max-width: 960px;
+display: flex;
+justify-content: center;
+margin-top: 1rem;
+margin-inline: auto;
+border-radius: 0.5rem;
+background-color: var(--exh-bg-clr);
+}
+
+.section1 {background-color: var(--events-young-sci-bg);}
+.section2 {background-color: var(--events-prof-bg);}
+.section3 {background-color: var(--events-night-bg);}
+.section4 {background-color: var(--events-energ-bg);}
+
+
+.events-img-1 img {
+width: 80%;
+max-width: 960px;
+height: 225px;
+display: flex;
+margin-inline: auto;
+object-fit: cover;
+object-position: 35% 35%; 
+border-radius: 0.5rem;
+margin-bottom: 6rem;
+}
+
+.events-img-2 .img-3, img {
+width: 80%;
+max-width: 960px;
+height: 225px;
+display: flex;
+margin-inline: auto;
+object-fit: cover;
+object-position: 50% 50%; 
+border-radius: 0.5rem;
+margin-bottom: 6rem;
+}
+
+.events-img-4 img {
+display: flex;
+margin-inline: auto;
+width: 80%;
+max-width: 960px; 
+height: 225px; 
+object-fit: cover;
+object-position: 80% 80%; 
+border-radius: 0.5rem;
+margin-bottom: 6rem;
+}
+
+.events-text {
+display: flex;
+flex-direction: column;
+padding: 4rem;
+}
+
+.calendar-date {
+font-weight: 700;
+}
+
+.section2, .section3, * 
+.calendar-date {
+margin-top: .9rem;
+}
+ 
+.events-text h2, p, 
+.text-info {
+text-align: center;
+width: 100%;
+max-width: 42rem;
+font-family: "anek latin";
+  
+@media screen and (max-width:676px) {
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+}
+
+.fa-calendar-days {
+display: flex;
+justify-content: center;
+gap: .5rem;
+font-weight: 700;
+}
+
+/*Event page ends*/
+
+
+
 
 
 
