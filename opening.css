@@ -40,7 +40,6 @@
 .opening-container {
 width: 100%;
 max-width: 1200px;
-height: 100vh;
 margin: 0 auto;
 font-family: "inter", Arial, 
 Helvetica, sans-serif;
@@ -57,34 +56,44 @@ justify-content: center;
 font-family: "prompt", Arial, Helvetica, sans-serif;
 }
 
+.location-ico {
+  display: flex;
+  align-items: center;
+}
 
 .opening-days {
 max-width: 960px;
-margin: 3rem auto;
+margin: 2rem auto;
 display: flex;
 justify-content: center;
 text-align: center;
 }
 
+
+
+
+
+
 @media only screen and (max-width: 670px){
+  .opening-container {
+width: 80%;
+max-width: 1200px;
+margin: 0 auto;
+font-family: "inter", Arial, 
+Helvetica, sans-serif;
+}
+  
   .opening-days h2 {
     font-size: 18px;
   }
 }
 
-
 .opening-days-items > span {
   color: #3DDB8B;
 }
 
-.opening-middle-container {
-  display: flex;
-  max-width: 1000px;
-  margin-inline: auto;
-}
-
 .opening-middle-items, h2, p {
-  margin: .8rem;
+  margin: .5rem;
   font-family: "anek latin", Arial, Helvetica,
    sans-serif;
 
