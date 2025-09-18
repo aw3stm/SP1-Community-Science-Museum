@@ -737,7 +737,7 @@ width: 80%;
 max-width: 960px; 
 height: 225px; 
 object-fit: cover;
-object-position: 50% 50%; 
+object-position: 80% 80%; 
 border-radius: 0.5rem;
 margin-bottom: 6rem;
 }
@@ -784,6 +784,7 @@ font-weight: 700;
 
 
 
+
 /*work/get involved page*/
 
 .bold-mail {
@@ -812,6 +813,7 @@ text-transform: uppercase;
 }
 
  /*work/get involved ends*/  
+
 
 
 
