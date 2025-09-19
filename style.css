@@ -922,24 +922,7 @@ text-transform: uppercase;
     }
 }
 
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -981,7 +964,7 @@ text-align: center;
   padding: .3rem;
 }
 
-.opening-days-items > span {
+.green-text {
   color: #3DDB8B;
 }
 
@@ -1005,6 +988,7 @@ text-align: center;
 
 
  #opening-btn {
+    padding: 1rem;
     background-color: var(--button-clr);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     border: none;
