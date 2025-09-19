@@ -65,7 +65,8 @@ height: 100%;
 display: flex; 
 justify-content: space-between; 
 background-color: white; 
-padding: 0rem 7rem; 
+padding: 0rem 7rem;
+margin: 1rem; 
 } 
 
 .navbar_container { 
@@ -191,7 +192,8 @@ height: 58px;
 background-color:#23E7C7; 
 border-radius: 8px; 
 font-size: 24px; 
-border: none; 
+border: none;
+cursor: pointer; 
 } 
 
 button:hover { 
@@ -201,9 +203,7 @@ background-color: #D1F2ED;
 .cta_container { 
 display: flex; 
 flex-direction: column; 
-
-flex-wrap: nowrap; 
-max-width: 200px; 
+flex-wrap: nowrap;  
 height: 100%; 
 padding-left: 2rem; 
 padding-right: 2rem; 
@@ -212,8 +212,7 @@ padding-bottom: 1rem;
  
 .cta_btns { 
 display: flex; 
-flex-wrap: nowrap; 
-max-width: 200px; 
+flex-wrap: nowrap;  
 justify-content: center; 
 padding-top: 0.5rem; 
 } 
