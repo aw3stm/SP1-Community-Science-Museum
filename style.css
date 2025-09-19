@@ -569,6 +569,7 @@ p {
   background-color: var(--explore-bg);
   border-radius: 2rem;
   margin: 4rem auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .explore-top-image {
@@ -584,6 +585,7 @@ p {
     z-index: 1;
     top: -49px;
     left: -50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .explore-middle-title {
@@ -594,6 +596,7 @@ p {
     text-transform: uppercase;
     border-radius: 0.5rem;
     background: #F0F0F0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .explore-bottom-text {
@@ -617,6 +620,7 @@ p {
   text-align: center;
   margin-inline: auto;
   border-radius: 2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .holiday_title {
