@@ -510,7 +510,7 @@ text-align: center;
   padding: .3rem;
 }
 
-.opening-days-items > span {
+.green-text {
   color: #3DDB8B;
 }
 
@@ -533,15 +533,16 @@ text-align: center;
   }
 
 
- #opening-btn {
-    background-color: var(--button-clr);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    border: none;
-    font-family: "inter", Arial, Helvetica, 
-    sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-  }
+#opening-btn {
+  padding: 3rem;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
 
   #opening-btn:hover {
     cursor: pointer;
