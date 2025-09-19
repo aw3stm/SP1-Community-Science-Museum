@@ -1,0 +1,427 @@
+* { 
+margin: 0; 
+padding: 0; 
+} 
+
+body { 
+background-color: white;
+margin: 0; 
+padding: 0; 
+} 
+
+
+/*Start Index page for fullscreen*/ 
+
+.welcome { 
+display: grid; 
+grid-template-columns: repeat(2, minmax(0, 1fr)); 
+align-items: center; 
+justify-items: center; 
+background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(227, 248, 244, 1) 50%, rgba(35, 231, 199, 1) 100%); 
+} 
+
+.welcome__content { 
+height: 100%;
+display: flex; 
+flex-direction: column; 
+justify-content: center; 
+align-items: center; 
+} 
+
+.welcome__content img { 
+width: 100%;
+height: 100%; 
+} 
+
+.welcome__content h1 { 
+color: #000; 
+font-family: Prompt; 
+font-size: 72px; 
+font-style: normal; 
+font-weight: 700; 
+text-align: center; 
+} 
+
+.welcome__content p { 
+color: #000; 
+font-family: "Anek Latin"; 
+font-size: 32px; 
+font-style: normal; 
+font-weight: 600; 
+text-align: center; 
+padding-top: 2rem; 
+
+} 
+.to_expect h2 { 
+font-family: "Inter"; 
+font-size: 2.5rem; 
+font-weight: 500;
+} 
+
+.to_expect h3 { 
+font-family: "Prompt"; 
+font-size: 1.5rem; 
+} 
+
+.to_expect p { 
+font-family: "Anek latin"; 
+font-size: 1rem; 
+} 
+.grid-a p {
+    font-family: "inter";
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+.grid-b p {
+    font-family: "Prompt";
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.shop {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-b {
+    display: grid; 
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-item-services {
+    display: flex;
+    flex-direction:  column;
+    max-width: 640px;
+    height: 430px;
+    padding: 8rem 4rem;
+}
+
+.grid-item-services-img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-services-img img{
+ width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.grid-item-services-text {
+    display: flex;
+    justify-content: center;
+    bottom: 40px;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.grid-item-services-text a {
+    width: 250px;
+    padding: 1rem 3rem;
+    background-color: #BDFCF9;
+    text-align: center;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: #000;
+    font-family: "Prompt";
+}
+
+
+/*End home page full screen*/ 
+
+/*Start home page for 1200screen*/ 
+@media only screen and (max-width: 1200px) { 
+
+.welcome { 
+grid-template-columns: repeat(1, minmax(0, 1fr)); 
+justify-content: center; 
+align-items: center; 
+padding-bottom: 2rem; 
+} 
+
+.welcome__content h1 { 
+padding: 0rem 3rem; 
+font-size: 3rem; 
+} 
+ 
+.welcome__content p { 
+font-size: 2rem; 
+} 
+
+.to_expect h2 { 
+font-family: "Inter"; 
+font-size: 2rem; 
+font-weight: 500;
+} 
+
+.to_expect h3 { 
+font-family: "Prompt"; 
+font-size: 1.2rem; 
+} 
+
+.to_expect p { 
+font-family: "Anek latin"; 
+font-size: 1rem; 
+} 
+.grid-a p {
+    font-family: "inter";
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+.grid-b p {
+    font-family: "Prompt";
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+} 
+
+@media only screen and (max-width: 600px) { 
+
+.welcome__content h1 { 
+font-size: 2rem; 
+padding-bottom: 1rem; 
+} 
+
+.welcome__content p { 
+padding-top: 0; 
+font-size: 1.5rem; 
+} 
+
+.to_expect h2 { 
+display: none;  
+} 
+
+.to_expect h3 { 
+font-family: "Prompt"; 
+font-size: 1rem; 
+} 
+
+.to_expect p { 
+font-family: "Anek latin"; 
+font-size: 1rem; 
+} 
+
+.grid-item-services {
+    display: flex;
+    flex-direction:  column;
+    max-width: 640px;
+    height: 430px;
+    padding: 2rem 4rem;
+}
+
+.grid-item-services-text a {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.grid-item-services-img img {
+    border-radius: 8px;
+    max-width: 400px;
+}
+/*ajust images*/
+/*ajust blue box */
+
+} 
+/*End home page*/ 
+
+/* To Expect Section  */ 
+
+.to_expect { 
+padding-top: 1rem; 
+background-color: #ffffff; 
+width: 100%; 
+} 
+
+.expect { 
+display: flex; 
+flex-direction: row; 
+justify-content: center; 
+align-items: center; 
+padding-left: 1rem;
+padding-right: 1rem;
+} 
+
+.expect_wrapper { 
+display: grid; 
+grid-template-columns: repeat(3, minmax(0, 1fr)); 
+width: 100%;  
+} 
+
+.expect--card { 
+display: flex; 
+flex-direction: column; 
+justify-content: flex-start; 
+width: 450px; 
+height: 100%; 
+padding: 2rem; 
+} 
+
+.expect--card_head { 
+display: flex; 
+flex-direction: row; 
+justify-content: space-between; 
+text-align: center; 
+font-size: 1.5rem; 
+border-width: 2px; 
+border-bottom-style: solid; 
+} 
+
+.expect--card_img { 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+width: 100%; 
+padding-top: 1rem; 
+} 
+
+.expect--card_img img { 
+width: 100%; 
+height: 450px; 
+object-fit: cover; 
+padding-bottom: 2rem; 
+} 
+ 
+@media only screen and (max-width: 1400px) { 
+
+.expect_wrapper { 
+display: flex; 
+justify-content: center; 
+} 
+
+} 
+
+@media only screen and (max-width: 900px) { 
+
+.to_expect { 
+height: fit-content; 
+} 
+
+.to_expect h2 { 
+display: none;  
+} 
+
+.to_expect h3 { 
+font-family: "Prompt"; 
+font-size: 1.5rem; 
+} 
+ 
+.to_expect p { 
+font-family: "Anek latin"; 
+font-size: 1rem; 
+} 
+
+.expect_wrapper { 
+display: grid; 
+grid-template-columns: repeat(1, minmax(0, 1fr)); 
+width: 100%; 
+gap: 1rem; 
+} 
+
+.expect--card { 
+width: auto; 
+} 
+
+.expect--card_img { 
+display: none; 
+} 
+
+} 
+
+/* End of To Expect Section */
+
+/*Start of the Collage section*/
+.collage {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.grid-a {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.grid-item1 {
+    grid-area: 1/1/2/3;
+}
+
+.grid-item-img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-img img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.grid-item-text {
+    display: flex;
+    position: relative;
+    left: 2rem;
+    bottom: 50px;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.grid-item2 {
+    grid-area: 1/3/2/4;
+    width: 100%;
+}
+
+.grid-item3 {
+    grid-area: 2/1/3/4;
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .grid-a {
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); 
+    }
+
+    .grid-item1 {
+    grid-area: 1;
+    }
+    .grid-item2 {
+    grid-area: 2;
+    }
+    .grid-item3 {
+    grid-area: 3;
+    }
+
+.grid-a p {
+    font-family: "inter";
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+.grid-b p {
+    font-family: "Prompt";
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/*trying to make it responsive*/
+.grid-b {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+}
+/*Section Collage Media End*/
+
