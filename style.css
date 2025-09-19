@@ -699,6 +699,7 @@ justify-content: center;
 margin-inline: auto;
 border-radius: 0.5rem;
 background-color: var(--exh-bg-clr);
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .events p {
@@ -721,6 +722,7 @@ object-fit: cover;
 object-position: 35% 35%; 
 border-radius: 0.5rem;
 margin-bottom: 6rem;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .events-img-1 img { object-position: 35% 35%; }
