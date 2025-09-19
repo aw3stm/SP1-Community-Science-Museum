@@ -28,13 +28,6 @@
   --events-energ-bg: #E2FAF9;
   --work-bg: #D9D9D9;
   --footer-clr: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
-
-  --primary-text-clr: #000;
-  --font-family: "inter", arial, sans-serif, helvetica;
-  --h1: semibold 40px "prompt", arial, sans-serif, Helvetica;
-  --h2: semibold 32px "anek latin" arial, sans-serif, Helvetica;
-  --h3: semibold 24 "inter" arial, sans-serif, helvetica;
-  --p: normal 20px "anek latin" arial, sans-serif, Helvetica;
   --text-clr: #000;
 
 }
@@ -908,10 +901,11 @@ text-transform: uppercase;
 
 .opening-container {
 width: 100%;
-max-width: 960px;
+max-width: 980px;
 margin: 0 auto;
 font-family: "inter", Arial, 
 Helvetica, sans-serif;
+margin-bottom: 4rem;
 }
 
 
@@ -929,15 +923,15 @@ font-family: "prompt", Arial, Helvetica,
 }
 
 .opening-days{
-max-width: 700px;
+max-width: 980px;
 margin: 2rem auto;
 display: flex;
 justify-content: center;
 text-align: center;
 background-color: var(--exh-bg-clr);
-border-radius: 2rem;
+border-radius: 1rem;
 padding: 3rem;
-border: solid rgb(228, 228, 228) .02rem;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .opening-days h2 {
@@ -969,7 +963,7 @@ border: solid rgb(228, 228, 228) .02rem;
 
 
  #opening-btn {
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--button-clr);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     border: none;
@@ -978,11 +972,13 @@ border: solid rgb(228, 228, 228) .02rem;
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
+    border-radius: .8rem;
   }
 
   #opening-btn:hover {
     cursor: pointer;
     transform: scale(1.05);
+    background-color: var(--button-hover);
   }
 
 
@@ -998,6 +994,10 @@ Helvetica, sans-serif;
 .opening-days h2 {
 font-size: 18px;
 }
+
+ #opening-btn {
+    padding: 1rem;
+  }
 }
 
 
