@@ -29,7 +29,6 @@
   --events-night-bg: #EFC593;
   --events-energ-bg: #E2FAF9;
   --work-bg: #D9D9D9;
-  --gradient: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
   --footer-clr: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
 
   --primary-text-clr: #000;
@@ -713,7 +712,7 @@ background-color: var(--exh-bg-clr);
 .section4 {background-color: var(--events-energ-bg);}
 
 
-.events-img-1 img {
+.events-img img {
 width: 80%;
 max-width: 960px;
 height: 225px;
@@ -725,30 +724,10 @@ border-radius: 0.5rem;
 margin-bottom: 6rem;
 }
 
-.events-img-2 img, 
-.events-img-3 img {
-width: 80%;
-max-width: 960px;
-height: 225px;
-display: flex;
-margin-inline: auto;
-object-fit: cover;
-object-position: 50% 50%; 
-border-radius: 0.5rem;
-margin-bottom: 6rem;
-}
-
-.events-img-4 img {
-display: flex;
-margin-inline: auto;
-width: 80%;
-max-width: 960px; 
-height: 225px; 
-object-fit: cover;
-object-position: 80% 80%; 
-border-radius: 0.5rem;
-margin-bottom: 6rem;
-}
+.events-img-1 img { object-position: 35% 35%; }
+.events-img-2 img,
+.events-img-3 img { object-position: 50% 50%; }
+.events-img-4 img { object-position: 80% 80%; }
 
 .events-text {
 display: flex;
@@ -939,7 +918,7 @@ Helvetica, sans-serif;
 
 
 h1 {
-margin-top: 2rem;
+margin-top: 6rem;
 display: flex;
 justify-content: center;
 font-family: "prompt", Arial, Helvetica,
@@ -952,11 +931,15 @@ font-family: "prompt", Arial, Helvetica,
 }
 
 .opening-days{
-max-width: 960px;
+max-width: 700px;
 margin: 2rem auto;
 display: flex;
 justify-content: center;
 text-align: center;
+background-color: var(--exh-bg-clr);
+border-radius: 2rem;
+padding: 3rem;
+border: solid rgb(228, 228, 228) .02rem;
 }
 
 .opening-days h2 {
@@ -996,6 +979,7 @@ text-align: center;
     sans-serif;
     font-weight: 600;
     font-size: 1rem;
+    text-transform: uppercase;
   }
 
   #opening-btn:hover {
