@@ -488,12 +488,14 @@ color: #23E7C7;
 .cosmo-image img {
     width: 100%;
     height: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .cosmo-image {
     width: 50%;
     height: auto;
     display: inherit;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
    
     @media screen and (max-width: 1024px) {
        width: 100%;  
@@ -517,6 +519,7 @@ p {
     justify-content: center;
     margin-inline: auto;
     padding: 2em;
+    
     
 @media screen and (max-width: 1024px){
     flex-direction: column-reverse;
@@ -543,6 +546,7 @@ p {
     font-family: "anek latin";
     padding: 4em;
     border: solid .3px rgb(241, 241, 241);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 
     @media screen and (max-width: 1024px) {
         width: 400px;
