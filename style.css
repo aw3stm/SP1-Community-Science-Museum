@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-:root{
---footer-clr: linear-gradient(0deg, #31E8CA 0%, #93F7E7 42.94%, #E2F8F4 79.33%, #FFF 100%);
-}
-
 
 /**********Variables***********/
 
@@ -894,9 +890,6 @@ text-transform: uppercase;
 
 }
 
-
-
-
 /*opening hours start*/
 
 .opening-container {
@@ -1000,8 +993,89 @@ font-size: 18px;
   }
 }
 
-/*prices page start*/
 
+/****Prices start****/
+
+.main-container {
+max-width: 800px;
+margin-inline: auto;
+margin-top: 5rem;
+margin-bottom: 5rem;
+}
+
+.main-container h1 {
+font-size: 1.5rem;
+margin: 4rem 0 .5rem 1rem;
+}
+
+.questions details {
+border: .04rem solid rgb(233, 232, 232);
+border-radius: .5rem;
+margin-bottom: 1rem;
+padding: 2rem;
+transition: all 0.3s ease;
+background: var(--prices-bg);
+}
+
+p.answer {
+padding: 2rem 0; 
+}
+
+p.bold-mail {
+font-weight: 700;
+}
+
+.questions summary {
+font-weight: bold;
+cursor: pointer;
+list-style: none;
+font-family: "anek latin",Arial, Helvetica, 
+sans-serif;
+font-size: 1.125rem;
+}
+
+.questions summary::after {
+content: "+";
+float: right;
+transition: transform 0.4s;
+font-size: 2rem;
+line-height: .5;
+}
+
+details[open] summary::after {
+content: "-";
+font-size: 2rem;
+}
+
+@media only screen and (max-width: 676px){
+.main-container {
+max-width: 450px;
+margin-bottom: 1rem;
+}
+.main-container h1 {
+font-size: 1.5rem;
+margin: 2rem 0 .5rem 1rem;
+}
+
+.questions details {
+padding: 1rem;
+}
+
+.questions summary {
+font-size: 1rem;
+}
+
+.questions summary::after {
+font-size: 1rem;
+line-height: 1;
+}
+
+details[open] summary::after {
+    font-size: 1rem;
+}
+}
+
+/****Prices end****/
 
 
 
