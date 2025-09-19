@@ -12,8 +12,6 @@
 }
 
 
-
-
 /**********Variables***********/
 
 :root {
@@ -64,10 +62,10 @@ height: 100%;
 } 
 
 .header_container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
 }
 
 .navbar_container {
