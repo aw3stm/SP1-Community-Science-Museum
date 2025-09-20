@@ -1070,9 +1070,10 @@ font-family: "prompt", Arial, Helvetica,
   align-items: center;
 }
 
-.opening-days{
+.opening-days {
 max-width: 980px;
 margin: 2rem auto;
+flex-wrap: wrap;
 background-color: var(--exh-bg-clr);
 border-radius: 1rem;
 padding: 3rem;
@@ -1085,6 +1086,15 @@ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
   gap: 1rem;
   line-height: 1.5;
+}
+
+@media only screen and (max-width:1024px){
+  .opening-days-items {
+  flex-direction: column;
+  text-align: center;
+  gap: .5rem;
+  line-height: 1;
+}
 }
 
 .opening-days h2 {
