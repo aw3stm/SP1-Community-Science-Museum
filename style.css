@@ -919,13 +919,18 @@ font-family: "prompt", Arial, Helvetica,
 .opening-days{
 max-width: 980px;
 margin: 2rem auto;
-display: flex;
-justify-content: center;
-text-align: center;
 background-color: var(--exh-bg-clr);
 border-radius: 1rem;
 padding: 3rem;
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.opening-days-items {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 1rem;
+  line-height: 1.5;
 }
 
 .opening-days h2 {
@@ -957,7 +962,7 @@ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 
 
  #opening-btn {
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: var(--button-clr);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     border: none;
