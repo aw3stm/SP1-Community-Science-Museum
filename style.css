@@ -1755,6 +1755,55 @@ font-size: 1rem;
 }
 /***end cart page****/
 
+/***error page***/
+.error_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D1F2ED;
+    border-radius: 8px;
+    width: auto;
+    height: 250px;
+    padding-bottom: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;  
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.error--text p {
+    text-align: center;
+    padding-bottom: .5rem;
+    font-family:"inter";
+    font-size: 1.5rem;
+}
+.error_box h1 {
+    text-align: center;
+    margin-top: 4rem;
+    font-family: "prompt";
+}
+
+@media screen and (max-width: 767px){
+.error_box {
+    width: auto;
+    height: 200px;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;  
+    margin-top: 1rem;
+}
+
+.error h1 {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "prompt";
+}
+.error--text p {
+font-size: 1rem;
+}
+
+}
+/**end error page**/
+
 /*************footer start***********/
 footer {
   min-height: 20vh;
