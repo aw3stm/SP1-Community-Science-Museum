@@ -488,14 +488,12 @@ color: #23E7C7;
 .cosmo-image img {
     width: 100%;
     height: auto;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .cosmo-image {
     width: 50%;
     height: auto;
     display: inherit;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
    
     @media screen and (max-width: 1024px) {
        width: 100%;  
@@ -519,7 +517,7 @@ p {
     justify-content: center;
     margin-inline: auto;
     padding: 2em;
-    
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
     
 @media screen and (max-width: 1024px){
     flex-direction: column-reverse;
@@ -528,10 +526,14 @@ p {
     background-color: #F9F9F9;
     width: 450px;
     height: auto;
-    margin-bottom: 2em;
-    border: solid .3px rgb(241, 241, 241);
+    margin-bottom: 2em; 
  }  
 }
+
+.card-parent:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+} 
 
 
 .child-text {
@@ -545,16 +547,19 @@ p {
     background-color: #F9F9F9;
     font-family: "anek latin";
     padding: 4em;
-    border: solid .3px rgb(241, 241, 241);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    
+    
+    
 
     @media screen and (max-width: 1024px) {
         width: 400px;
         flex-direction: column;
         align-content: center;
         text-align: center;
-        border: none;   
-    }    
+        border: none;
+          
+    } 
+      
 }
 
 /*exhibition page ends*/
