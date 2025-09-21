@@ -847,7 +847,8 @@ margin: 1rem;
 
 
 .work-container {
-  width: 80%;
+  width: 95%;
+  max-width: 450px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -862,6 +863,7 @@ margin: 1rem;
 
 .work-text {
  width: 100%;
+ max-width: 450px;
  padding: 3rem;
  background-color: var(--work-bg);
  text-align: center;
@@ -869,6 +871,7 @@ margin: 1rem;
 
 .work-image {
   width: 100%;
+  max-width: 450px;
 }
 
 .work-image img {
