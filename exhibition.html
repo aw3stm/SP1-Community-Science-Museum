@@ -1,103 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exhibition</title>
-<script src="index.js" defer></script>
-<script src="https://kit.fontawesome.com/d73d073248.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d73d073248.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <title>Exhibition</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-      <div class="nav-items">
-      <img class="logo" src="ico/Logo_CSM.png" alt="community science museum logo">
-      <ul class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">News</a>
-        <a href="#">Career</a>
-      </ul>
-      </div>
-    </nav>
-    <main>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam beatae amet omnis quis sed, officia nisi quam eius at voluptatibus odio hic perspiciatis dolor maiores maxime! Sequi adipisci culpa ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit vel asperiores aliquid expedita! Atque, veritatis earum maiores at temporibus quaerat rerum, obcaecati possimus debitis fugit quod eius blanditiis amet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, officiis cupiditate, qui vero inventore dolores modi nisi sequi veniam recusandae, voluptate eaque cumque. Reprehenderit, eaque aut numquam tenetur totam voluptatum.</p> 
+    <!--Start of Header/Navbar--> 
+<header class="header_container"> 
+    <div class="header_logo"> 
+        <img src="ico/Logo_navbar.png" alt="company logo"> 
+    </div> 
+    <nav class="navbar_container"> 
+        <div class="home_dropdown"> 
+            <li><a href="index.html">HOME</a> 
+                <ul class="home_content"> 
+                    <li><a href="about.html">ABOUT</a></li> 
+                    <li><a href="contact.html">CONTACT</a></li> 
+                    <li><a href="opening.html">OPENING</a></li> 
+                    <li><a href="prices.html">PRICES</a></li> 
+                    <li><a href="error.html">TICKETS</a></li> 
+                </ul> 
+            </li> 
+        </div> 
+        <div class="experience_dropdown"> 
+            <li><a href="exhibition.html">EXHIBITION</a> 
+                <ul class="experience_content"> 
+                    <li><a href="explore.html">EXPLORE</a></li> 
+                </ul> 
+            </li> 
+        </div> 
+        <div class="news"> 
+            <li><a href="events.html">NEWS</a></li> 
+        </div> 
+        <div class="work"> 
+            <li><a href="work.html">WORK</a></li> 
+        </div> 
+    </nav> 
+    <div class="cta_container"> 
+        <div class="cta_btns"> 
+            <div class="cta_cart"> 
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+            </div> 
+            <div class="cta_ticket"> 
+                <div class="cta_ticket--text">
+                    <p class="open">Open now</p> 
+                    <p>Tuesday 10:00-16:00</p>
+                </div> 
+                <a href="error.html"><button>Buy ticket</button></a> 
+            </div> 
+        </div> 
+    </div> 
+    <div class="hamburger"> 
+        <div class="ham-btn"> 
+            <div><i class="fa-solid fa-bars"></i> 
+                <ul class="hamburger_content"> 
+                    <li><a href="index.html">HOME</a></li> 
+                    <li><a href="about.html">ABOUT</a></li> 
+                    <li><a href="events.html">NEWS</a></li> 
+                    <li><a href="exhibition.html">EXHIBITION</a></li> 
+                    <li><a href="explore.html">EXPLORE</a></li> 
+                    <li><a href="opening.html">OPENING</a></li> 
+                    <li><a href="prices.html">PRICES</a></li> 
+                    <li><a href="error.html">TICKETS</a></li> 
+                    <li><a href="work.html">WORK</a></li> 
+                    <li><a href="contact.html">CONTACT</a></li> 
+                </ul> 
+            </div> 
+        </div> 
+    </div> 
+</header> 
+<!--End navbar-->
+        <main>
+            <h1>Exhibition</h1>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam deserunt sunt maxime error magnam laboriosam veritatis, assumenda obcaecati at ex, quis recusandae iusto qui, est impedit rerum? Tenetur, quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, iste quis. Perferendis distinctio nobis sequi quo quod necessitatibus repellat facilis ducimus iure, consectetur culpa eius, aut excepturi iusto et accusamus.</p>
+            <!--card 1-->
+            <div class="card-parent">
+                <div class="child-text">
+                    <h2 class="exh-title">Cosmology</h2>
+                        <p>Explore the wonders of our cosmos. Our fantastic exhibition, 'The Sky Above Us', explores the night sky and what we can see and know about the universe around us. We'll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
+                        <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo's telescope, to the latest exploration of the planets in our solar system.</p>
+                </div><!--child text-->
+                <div class="cosmo-image"><img src="images/astro-home.jpg" alt="Astronaut sitting in a simulator">
+                </div>           
+          </div>
+
+          
+            <!--card 2-->
+            <div class="card-parent">
+                <div class="child-text">
+                    <h2 class="exh-title">Ecology</h2>
+                        <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.</p> 
+                        <p>In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
+                    </div>
+                <div class="cosmo-image"><img src="images/water-exh-img.jpg" alt="Plastic floating in the blue sea">
+                </div>           
+          </div>
 
 
-    </main>
-    <footer>
-      <div class="first-cont">
-      <div class="ico">
-      <div class="ico insta-ico">
-        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-      </div>
-      <div class="ico fb-ico">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      </div>
-      <div class="ico twi-ico">
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      </div>
-      <div class="ico yt-ico">
-        <a href="#"><i class="fa-brands fa-youtube"></i></div>
+           <!--card 3-->
+                <div class="card-parent">
+                <div class="child-text">
+                    <h2 class="exh-title">Biology & Medicine</h2>
+                        <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine.</p> <p>Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.
+                          Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it. </p>
+                    </div>
+                <div class="cosmo-image"><img src="images/medic-exh-img.jpg" alt="A researcher looking into a microscope">
+                </div>           
+          </div>
+
+           <!--card 4-->
+            <div class="card-parent">
+                <div class="child-text">
+                    <h2 class="exh-title">Evolution</h2>
+                    <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.</p> <p>Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn't survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
+                </div>
+            <div class="cosmo-image"><img src="images/mamm-exh.jpg" alt="Close-up of a mammoth">
+            </div>           
         </div>
-      <div class="totop">
-        <h3><a href="#">Back to top</h3></a>
-      <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
-        </div>
-      </div>
-      <div class="sec-cont">
-        <div class="content-1">
-          <h3>Location</h3>
-          <p>Wergelandsveien 29</p> 
-          <p>0167 Oslo</p>
-        </div>
 
-      <div class="content-2">
-          <h3>Opening hours</h3>
-          <p>Monday: Closed</p>
-          <p>Tuesday-Thursday: 10:00 - 16:00</p>
-          <p>Friday: 10:00 – 19:00</p>
-          <p>Saturday: 9:00 – 16:00</p>
-          Sunday: 9:00 – 13:00
-      </div>
+           <!--card 5-->
+            <div class="card-parent">
+                <div class="child-text">
+                    <h2 class="exh-title">Robotics and AI</h2>
+                    <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here.</p><p> You can even say hello and shake the hand of Rob the Robot.</p>
+                </div>
+                    <div class="cosmo-image"><img src="images/robot-exh-img.jpg" alt="Close-up of a white and turquoise robot">
+               </div>           
+          </div>
+        </main>
+<!--main footer-->
 
-      <div class="content-3">
-          <h3>Newsletter</h3>
-          <p>Enter e-mail</p>
+<footer>
+   <div class="logoscont">
+      <div class="logo">
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+
+    </div>
+    
+    <div class="totop">
+      <a href="#">Back to top</a> 
+      <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+
+
+    <div class="infocont">
+      <div class="location">
+          <h3 class="footerh3">Location</h3>
+          <p class="info-p">Wergelandsveien 29</p> 
+          <p class="info-p">0167 Oslo</p>
+      </div>
+    <div class="opening">
+        <h3 class="footerh3">Opening hours</h3>
+          <p class="info-p">Monday: Closed</p>
+          <p class="info-p">Tuesday-Thursday: 10:00 - 16:00</p>
+          <p class="info-p">Friday: 10:00 – 19:00</p>
+          <p class="info-p">Saturday: 9:00 – 16:00</p>
+          <p class="info-p">Sunday: 9:00 – 13:00</p>
+      </div>
+
+
+    <div class="newsletter">
+        <h3 class="newsletter-h3">Newsletter</h3>
+           <form>
+           <input type="email" placeholder="Enter email">
           <i class="fa-solid fa-arrow-right"></i>
-      </div>
+          </form>   
+      </div>
+    <div class="links">
+        <h3 class="footerh3">Quick links</h3>
+           <div class="info-li"><a href="about.html">Q&A</a></div>
+           <div class="info-li"><a href="contact.html">Contact us</a></div>
+           <div class="info-li"><a href="opening.html">Your visit</a></div>
+           <div class="info-li"><a href="work.html">Jobs</a></div>
+        </div> 
+    </div>
 
-        <div class="content-4">
-            <h3>Quick links</h3>
-            <a href="#">Q&A</a>
-            <a href="#">Contact us</a>
-            <a href="#">Your visit</a>
-            <a href="#">Locations</a>
-            <a href="#">Jobs</a>          
-        </div>
-      </div>
+    <div class="sponsors">
+        <div class="sponsor-title">        
+          <h3 class="sponsor-ti">Partners and founders</h3>
+      </div>
+    <div class="sponsor-name">
+          <h4>NordTek Solutions</h4>
+          <h4>Fjordkraft Energi</h4>
+          <h4>Nordlys Stiftelsen</h4>
+        </div>
+      </div>
 
-      <div class="third-cont">        
-          <h3 class="partners">Partners and founders</h3>
-          <div class="third-items">
-          <h4>NordTek Solutions</h4>
-          <h4>Fjordkraft Energi</h4>
-          <h4>Nordlys Stiftelsen</h4>
-        </div>
-      </div>
+    <div class="copyright">
+        <div class="copy-text">
+          <p class="terms-p">&copy; 2025 Community Science Museum</p>
+        </div>
 
-      <div class="fourth-cont">
-        <p class="copy">&copy 2025 Community Science Museum</p>
-        <a href="#">Terms and condition</a>
-        <a href="#">Privacy and cookies</a>
-        <a href="#">Terms of use</a>
-        <a href="#">FAQ</a>
-      </div>
-    </footer>
+    <div class="terms-copy">
+        <p class="terms-p">Terms and condition</p>
+        <p class="terms-p">Privacy and cookies</p> 
+        <p class="terms-p">Terms of use</p>
+        <p class="terms-p">FAQ</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
