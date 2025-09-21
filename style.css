@@ -1085,7 +1085,7 @@ p {
     align-items: center;
     justify-content: center;
     background-color: #F9F9F9;
-    width: 450px;
+    width: 430px;
     height: auto;
     margin-bottom: 2em; 
  }  
@@ -1109,16 +1109,9 @@ p {
     font-family: "anek latin";
     padding: 4em;
     
-    
-    
 
     @media screen and (max-width: 1024px) {
-        width: 400px;
-        flex-direction: column;
-        align-content: center;
-        text-align: center;
-        border: none;
-          
+        width: 400px;    
     } 
       
 }
