@@ -1454,6 +1454,7 @@ margin: 1rem;
 
 .work-image img {
   width: 450px;
+  height: 400px;
   display: block;
   margin-inline: auto;
 }
