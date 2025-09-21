@@ -1112,8 +1112,9 @@ input::placeholder {
   }
 
   .infocont {
-    display: grid;
-    grid-template-columns: 1fr;
+   display: flex;
+   justify-content: center;
+    
   }
 
 .opening, 
