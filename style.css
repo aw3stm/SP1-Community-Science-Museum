@@ -1161,6 +1161,15 @@ font-size: 18px;
  #opening-btn {
     padding: 1rem;
   }
+  .opening-button p {
+    text-align: center;
+    font-size: 16px;
+    margin: 1.5rem 0 0 0;
+  }
+
+  .opening-middle-items {
+    margin-bottom: 2rem;
+  }
 }
 
 
