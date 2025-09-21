@@ -33,37 +33,26 @@
 
 }
 
-  h1 { font-family: "prompt";}
-  h2 {font-family: "anek latin";}
-  h3 {font-family: "inter";}
-  p  {font-family: "inter";}
-
-/****Need this for my styling/Anna*/
+  h1 { font-family: "prompt", Arial, Helvetica, sans-serif;}
+  h2 {font-family: "anek latin", Arial, Helvetica, sans-serif;}
+  h3 {font-family: "inter", Arial, Helvetica, sans-serif;}
+  p  {font-family: "inter",Arial, Helvetica, sans-serif;}
 
 
-.a-site{
-    max-width: 1440px;
-    min-height: 100vh;
-    padding: 2em 3em;
-    margin-inline: auto;
-    color: #000;
 
-    @media screen and (max-width: 768px){
-      padding: 0; 
- } 
-}
-.a-main-wrapper {
-     img {
+.cosmo-image img {
     width: 100%;
-    max-width: 400px;
-    object-fit: cover;
-     }
+    height: auto;
 }
 
-header {
-    min-height: 15vh;
-    background-color: transparent;
-    padding: 3em;
+.cosmo-image {
+    width: 50%;
+    height: auto;
+    display: inherit;
+   
+    @media screen and (max-width: 1024px) {
+       width: 100%;  
+    }  
 }
 
 h1 {
@@ -71,50 +60,53 @@ h1 {
     text-align: center;
 }
 
-
-main{
-    flex: 1;
+p {
+  margin: .02rem;  
 }
 
+
 .card-parent {
-    max-width: 63em;
+    width: 100%;
+    max-width: 960px;
     display: flex;
     justify-content: center;
     margin-inline: auto;
-    padding: 3em;
+    padding: 2em;
     
-    @media screen and (max-width: 768px){
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        background-color: #F9F9F9;
-        width: 450px;
-        height: auto;
-        margin-bottom: 2em;
- }   
+@media screen and (max-width: 1024px){
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9F9F9;
+    width: 450px;
+    height: auto;
+    margin-bottom: 2em;
+    border: solid .3px rgb(241, 241, 241);
+ }  
 }
 
 
 .child-text {
-    width: 400px;
+    width: 50%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
-    align-items: center;
     gap: 1em;
     background-color: #F9F9F9;
     font-family: "anek latin";
-    padding: 3em;
+    padding: 4em;
+    border: solid .3px rgb(241, 241, 241);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
+        width: 400px;
         flex-direction: column;
         align-content: center;
-        text-align: center;   
+        text-align: center;
+        border: none;   
     }    
 }
 
-.cosmo-image {
-    width: 400px;
-    height: auto;
-    display: inherit;
-}
+
+

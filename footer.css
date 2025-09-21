@@ -20,7 +20,7 @@
 
 /*************footer start***********/
 footer {
-  min-height: 30vh;
+  min-height: 20vh;
   width: 100%;
   background: var(--footer-clr);
   font-family: "inter", Arial, Helvetica, sans-serif;
@@ -30,7 +30,7 @@ footer {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  margin-bottom: 2em;
+  margin: 2em;
 }
 
 .logo {
@@ -90,6 +90,7 @@ input::placeholder {
 .footerh3 {
   margin-bottom: 0.5rem;
 }
+
 .sponsors {
   display: flex;
   flex-wrap: wrap;
@@ -101,13 +102,11 @@ input::placeholder {
 .sponsor-name {
   display: flex;
   align-items: center;
-  margin-inline: auto;
 }
 
 .sponsor-title {
-  font-family: "prompt", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  margin-inline: auto;
+  font-family:"prompt", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
 }
 
 .copyright {
@@ -122,8 +121,7 @@ input::placeholder {
   align-items: center;
 }
 
-li, a {
-  gap: 1rem 3rem;
+.info-li, a {
   text-decoration: none;
   color: var(--text-clr);
   list-style: none;
